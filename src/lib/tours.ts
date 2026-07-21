@@ -1,5 +1,5 @@
-// Image assets served from Lovable CDN
-const A = (id: string, name: string) => `/__l5e/assets-v1/${id}/${name}`;
+// Image assets served from Lovable CDN (absolute URLs so this preview can load them)
+const A = (id: string, name: string) => `https://jaisalmerholidays.lovable.app/__l5e/assets-v1/${id}/${name}`;
 
 const IMG = {
   sunriseSafari: A("da5638c2-2390-4f35-9cee-197f6d4fd690", "sunrise-safari.webp"),
