@@ -62,7 +62,7 @@ export function BookingModal({ open, onClose, tourTitle, priceText }: Props) {
     setStatus("loading");
     setError(null);
     try {
-      const bookingPayload = { tourTitle, name, email, phone, guests: String(guests), date, notes, amount: totalAmount };
+      const bookingPayload = { tourTitle, name, email, phone, guests: String(guests), unit: unitPlural, date, notes, amount: totalAmount };
       const orderRes = await fetch("/api/public/booking-order", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -204,7 +204,7 @@ export function BookingModal({ open, onClose, tourTitle, priceText }: Props) {
                     <div>
                       <p className="text-[10px] uppercase tracking-widest text-[var(--maroon)]/70 font-semibold">Total to pay</p>
                       <p className="text-xs text-[var(--ink)]/60 mt-0.5">
-                        ₹{unitPrice.toLocaleString("en-IN")} × {guests}
+                        ₹{unitPrice.toLocaleString("en-IN")} × {guests} {guests === 1 ? unitSingular : unitPlural}
                       </p>
                     </div>
                     <p className="font-display text-3xl sm:text-4xl text-[var(--maroon)] leading-none">
