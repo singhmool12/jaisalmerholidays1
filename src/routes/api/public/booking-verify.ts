@@ -7,6 +7,7 @@ type Booking = {
   email?: string;
   phone?: string;
   guests?: string;
+  unit?: string;
   date?: string;
   notes?: string;
   amount?: number;
@@ -54,7 +55,7 @@ export const Route = createFileRoute("/api/public/booking-verify")({
             `<b>Name:</b> ${esc(b.name)}\n` +
             `<b>Email:</b> ${esc(b.email)}\n` +
             `<b>Phone:</b> ${esc(b.phone)}\n` +
-            `<b>Guests:</b> ${esc(b.guests)}\n` +
+            `<b>${esc(b.unit === "jeeps" ? "Jeeps" : "Guests")}:</b> ${esc(b.guests)}\n` +
             `<b>Date:</b> ${esc(b.date) || "—"}\n` +
             `<b>Notes:</b> ${esc(b.notes) || "—"}\n\n` +
             `<b>Amount:</b> ₹${esc(b.amount)}\n` +
