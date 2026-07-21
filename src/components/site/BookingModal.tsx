@@ -30,6 +30,10 @@ function loadRazorpay(): Promise<boolean> {
 
 export function BookingModal({ open, onClose, tourTitle, priceText }: Props) {
   const unitPrice = useMemo(() => parseAmount(priceText), [priceText]);
+  const isJeep = /4\s*[×x]\s*4|dune\s*bashing/i.test(tourTitle);
+  const unitSingular = isJeep ? "jeep" : "guest";
+  const unitPlural = isJeep ? "jeeps" : "guests";
+  const countLabel = isJeep ? "Jeeps" : "Guests";
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
