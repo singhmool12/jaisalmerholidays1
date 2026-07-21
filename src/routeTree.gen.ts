@@ -9,38 +9,248 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as TaxiRouteImport } from './routes/taxi'
+import { Route as SpecialEventsRouteImport } from './routes/special-events'
+import { Route as SightseeingRouteImport } from './routes/sightseeing'
+import { Route as HotelRouteImport } from './routes/hotel'
+import { Route as ExoticToursRouteImport } from './routes/exotic-tours'
+import { Route as DesertCampRouteImport } from './routes/desert-camp'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as CamelSafariRouteImport } from './routes/camel-safari'
+import { Route as AdventureRouteImport } from './routes/adventure'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ApiPublicBookingVerifyRouteImport } from './routes/api/public/booking-verify'
+import { Route as ApiPublicBookingOrderRouteImport } from './routes/api/public/booking-order'
 
+const TaxiRoute = TaxiRouteImport.update({
+  id: '/taxi',
+  path: '/taxi',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SpecialEventsRoute = SpecialEventsRouteImport.update({
+  id: '/special-events',
+  path: '/special-events',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SightseeingRoute = SightseeingRouteImport.update({
+  id: '/sightseeing',
+  path: '/sightseeing',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HotelRoute = HotelRouteImport.update({
+  id: '/hotel',
+  path: '/hotel',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ExoticToursRoute = ExoticToursRouteImport.update({
+  id: '/exotic-tours',
+  path: '/exotic-tours',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DesertCampRoute = DesertCampRouteImport.update({
+  id: '/desert-camp',
+  path: '/desert-camp',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CamelSafariRoute = CamelSafariRouteImport.update({
+  id: '/camel-safari',
+  path: '/camel-safari',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdventureRoute = AdventureRouteImport.update({
+  id: '/adventure',
+  path: '/adventure',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ApiPublicBookingVerifyRoute = ApiPublicBookingVerifyRouteImport.update({
+  id: '/api/public/booking-verify',
+  path: '/api/public/booking-verify',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiPublicBookingOrderRoute = ApiPublicBookingOrderRouteImport.update({
+  id: '/api/public/booking-order',
+  path: '/api/public/booking-order',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/adventure': typeof AdventureRoute
+  '/camel-safari': typeof CamelSafariRoute
+  '/contact': typeof ContactRoute
+  '/desert-camp': typeof DesertCampRoute
+  '/exotic-tours': typeof ExoticToursRoute
+  '/hotel': typeof HotelRoute
+  '/sightseeing': typeof SightseeingRoute
+  '/special-events': typeof SpecialEventsRoute
+  '/taxi': typeof TaxiRoute
+  '/api/public/booking-order': typeof ApiPublicBookingOrderRoute
+  '/api/public/booking-verify': typeof ApiPublicBookingVerifyRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/adventure': typeof AdventureRoute
+  '/camel-safari': typeof CamelSafariRoute
+  '/contact': typeof ContactRoute
+  '/desert-camp': typeof DesertCampRoute
+  '/exotic-tours': typeof ExoticToursRoute
+  '/hotel': typeof HotelRoute
+  '/sightseeing': typeof SightseeingRoute
+  '/special-events': typeof SpecialEventsRoute
+  '/taxi': typeof TaxiRoute
+  '/api/public/booking-order': typeof ApiPublicBookingOrderRoute
+  '/api/public/booking-verify': typeof ApiPublicBookingVerifyRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/adventure': typeof AdventureRoute
+  '/camel-safari': typeof CamelSafariRoute
+  '/contact': typeof ContactRoute
+  '/desert-camp': typeof DesertCampRoute
+  '/exotic-tours': typeof ExoticToursRoute
+  '/hotel': typeof HotelRoute
+  '/sightseeing': typeof SightseeingRoute
+  '/special-events': typeof SpecialEventsRoute
+  '/taxi': typeof TaxiRoute
+  '/api/public/booking-order': typeof ApiPublicBookingOrderRoute
+  '/api/public/booking-verify': typeof ApiPublicBookingVerifyRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/adventure'
+    | '/camel-safari'
+    | '/contact'
+    | '/desert-camp'
+    | '/exotic-tours'
+    | '/hotel'
+    | '/sightseeing'
+    | '/special-events'
+    | '/taxi'
+    | '/api/public/booking-order'
+    | '/api/public/booking-verify'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/adventure'
+    | '/camel-safari'
+    | '/contact'
+    | '/desert-camp'
+    | '/exotic-tours'
+    | '/hotel'
+    | '/sightseeing'
+    | '/special-events'
+    | '/taxi'
+    | '/api/public/booking-order'
+    | '/api/public/booking-verify'
+  id:
+    | '__root__'
+    | '/'
+    | '/adventure'
+    | '/camel-safari'
+    | '/contact'
+    | '/desert-camp'
+    | '/exotic-tours'
+    | '/hotel'
+    | '/sightseeing'
+    | '/special-events'
+    | '/taxi'
+    | '/api/public/booking-order'
+    | '/api/public/booking-verify'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AdventureRoute: typeof AdventureRoute
+  CamelSafariRoute: typeof CamelSafariRoute
+  ContactRoute: typeof ContactRoute
+  DesertCampRoute: typeof DesertCampRoute
+  ExoticToursRoute: typeof ExoticToursRoute
+  HotelRoute: typeof HotelRoute
+  SightseeingRoute: typeof SightseeingRoute
+  SpecialEventsRoute: typeof SpecialEventsRoute
+  TaxiRoute: typeof TaxiRoute
+  ApiPublicBookingOrderRoute: typeof ApiPublicBookingOrderRoute
+  ApiPublicBookingVerifyRoute: typeof ApiPublicBookingVerifyRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/taxi': {
+      id: '/taxi'
+      path: '/taxi'
+      fullPath: '/taxi'
+      preLoaderRoute: typeof TaxiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/special-events': {
+      id: '/special-events'
+      path: '/special-events'
+      fullPath: '/special-events'
+      preLoaderRoute: typeof SpecialEventsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sightseeing': {
+      id: '/sightseeing'
+      path: '/sightseeing'
+      fullPath: '/sightseeing'
+      preLoaderRoute: typeof SightseeingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/hotel': {
+      id: '/hotel'
+      path: '/hotel'
+      fullPath: '/hotel'
+      preLoaderRoute: typeof HotelRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/exotic-tours': {
+      id: '/exotic-tours'
+      path: '/exotic-tours'
+      fullPath: '/exotic-tours'
+      preLoaderRoute: typeof ExoticToursRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/desert-camp': {
+      id: '/desert-camp'
+      path: '/desert-camp'
+      fullPath: '/desert-camp'
+      preLoaderRoute: typeof DesertCampRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/camel-safari': {
+      id: '/camel-safari'
+      path: '/camel-safari'
+      fullPath: '/camel-safari'
+      preLoaderRoute: typeof CamelSafariRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/adventure': {
+      id: '/adventure'
+      path: '/adventure'
+      fullPath: '/adventure'
+      preLoaderRoute: typeof AdventureRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -48,11 +258,36 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/api/public/booking-verify': {
+      id: '/api/public/booking-verify'
+      path: '/api/public/booking-verify'
+      fullPath: '/api/public/booking-verify'
+      preLoaderRoute: typeof ApiPublicBookingVerifyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/public/booking-order': {
+      id: '/api/public/booking-order'
+      path: '/api/public/booking-order'
+      fullPath: '/api/public/booking-order'
+      preLoaderRoute: typeof ApiPublicBookingOrderRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AdventureRoute: AdventureRoute,
+  CamelSafariRoute: CamelSafariRoute,
+  ContactRoute: ContactRoute,
+  DesertCampRoute: DesertCampRoute,
+  ExoticToursRoute: ExoticToursRoute,
+  HotelRoute: HotelRoute,
+  SightseeingRoute: SightseeingRoute,
+  SpecialEventsRoute: SpecialEventsRoute,
+  TaxiRoute: TaxiRoute,
+  ApiPublicBookingOrderRoute: ApiPublicBookingOrderRoute,
+  ApiPublicBookingVerifyRoute: ApiPublicBookingVerifyRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
