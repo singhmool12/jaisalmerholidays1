@@ -140,7 +140,7 @@ export function BookingModal({ open, onClose, tourTitle, priceText }: Props) {
               </h3>
               <div className="w-10 h-[2px] bg-[var(--gold)] rounded-full mt-3" />
               <p className="mt-2 text-xs sm:text-sm text-[var(--cream)]/80">
-                ₹{unitPrice.toLocaleString("en-IN")} <span className="opacity-70">per guest</span>
+                ₹{unitPrice.toLocaleString("en-IN")} <span className="opacity-70">per {unitSingular}</span>
               </p>
             </div>
 
@@ -165,23 +165,23 @@ export function BookingModal({ open, onClose, tourTitle, priceText }: Props) {
                   <Field label="Phone (WhatsApp)" required value={phone} onChange={setPhone} inputMode="tel" />
 
                   <div>
-                    <span className="text-sm font-medium text-[var(--ink)]">Guests<span className="text-[var(--maroon)]"> *</span></span>
+                    <span className="text-sm font-medium text-[var(--ink)]">{countLabel}<span className="text-[var(--maroon)]"> *</span></span>
                     <div className="mt-1 flex items-center justify-between rounded-xl border border-[var(--border)] bg-white/80 px-2 py-1.5">
                       <button
                         type="button"
                         onClick={() => setGuests((g) => Math.max(1, g - 1))}
                         className="w-9 h-9 rounded-lg bg-[var(--maroon)] text-[var(--cream)] font-bold text-lg leading-none hover:opacity-90"
-                        aria-label="Decrease guests"
+                        aria-label={`Decrease ${unitPlural}`}
                       >−</button>
                       <div className="flex-1 text-center">
                         <span className="font-display text-xl text-[var(--maroon)]">{guests}</span>
-                        <span className="ml-1 text-xs text-[var(--ink)]/60">{guests === 1 ? "guest" : "guests"}</span>
+                        <span className="ml-1 text-xs text-[var(--ink)]/60">{guests === 1 ? unitSingular : unitPlural}</span>
                       </div>
                       <button
                         type="button"
                         onClick={() => setGuests((g) => Math.min(50, g + 1))}
                         className="w-9 h-9 rounded-lg bg-[var(--maroon)] text-[var(--cream)] font-bold text-lg leading-none hover:opacity-90"
-                        aria-label="Increase guests"
+                        aria-label={`Increase ${unitPlural}`}
                       >+</button>
                     </div>
                   </div>
