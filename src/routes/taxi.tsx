@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ServicePage } from "@/components/site/ServicePage";
 import { TAXIS } from "@/lib/tours";
-const hero = "https://loremflickr.com/1600/900/car,rental,india?lock=710";
+const hero = "https://jaisalmerholidays.lovable.app/__l5e/assets-v1/bbbcba69-6d05-4d06-b7cf-3cec37d84927/self-drive-dzire.jpg";
 
 export const Route = createFileRoute("/taxi")({
   head: () => ({
