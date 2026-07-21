@@ -1,5 +1,5 @@
-// Image assets served from Lovable CDN
-const A = (id: string, name: string) => `/__l5e/assets-v1/${id}/${name}`;
+// Image assets served from Lovable CDN (absolute URLs so this preview can load them)
+const A = (id: string, name: string) => `https://jaisalmerholidays.lovable.app/__l5e/assets-v1/${id}/${name}`;
 
 const IMG = {
   sunriseSafari: A("da5638c2-2390-4f35-9cee-197f6d4fd690", "sunrise-safari.webp"),
@@ -312,7 +312,7 @@ export const ADVENTURE: Tour[] = [
       "20–30 minutes of driving across changing dunes.",
       "Great add-on to a sunset camel safari.",
     ] },
-  { title: "Quad ATV Rides", price: "from ₹1,800 per ride", image: IMG.quad,
+  { title: "Quad ATV Rides", price: "from ₹1,200 per ride", image: IMG.quad,
     paragraphs: [
       "Take the controls yourself on a quad bike.",
       "Race across a marked dune circuit.",
@@ -339,7 +339,7 @@ export const ADVENTURE: Tour[] = [
       "Perfect for first-time flyers.",
       "One of the highest-rated adventure add-ons in Jaisalmer.",
     ] },
-  { title: "Paramotoring", price: "on request", image: "https://i.ibb.co/prK7RzT4/images-1.jpg",
+  { title: "Paramotoring", price: "from ₹3,500 per person", image: "https://i.ibb.co/prK7RzT4/images-1.jpg",
     paragraphs: [
       "Motor-powered paraglider flight over the Thar.",
       "Tandem flight with an experienced pilot.",
