@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as TaxiRouteImport } from './routes/taxi'
 import { Route as SpecialEventsRouteImport } from './routes/special-events'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as SightseeingRouteImport } from './routes/sightseeing'
 import { Route as HotelRouteImport } from './routes/hotel'
 import { Route as ExoticToursRouteImport } from './routes/exotic-tours'
@@ -30,6 +31,11 @@ const TaxiRoute = TaxiRouteImport.update({
 const SpecialEventsRoute = SpecialEventsRouteImport.update({
   id: '/special-events',
   path: '/special-events',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SightseeingRoute = SightseeingRouteImport.update({
@@ -92,6 +98,7 @@ export interface FileRoutesByFullPath {
   '/exotic-tours': typeof ExoticToursRoute
   '/hotel': typeof HotelRoute
   '/sightseeing': typeof SightseeingRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/special-events': typeof SpecialEventsRoute
   '/taxi': typeof TaxiRoute
   '/api/public/booking-order': typeof ApiPublicBookingOrderRoute
@@ -106,6 +113,7 @@ export interface FileRoutesByTo {
   '/exotic-tours': typeof ExoticToursRoute
   '/hotel': typeof HotelRoute
   '/sightseeing': typeof SightseeingRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/special-events': typeof SpecialEventsRoute
   '/taxi': typeof TaxiRoute
   '/api/public/booking-order': typeof ApiPublicBookingOrderRoute
@@ -121,6 +129,7 @@ export interface FileRoutesById {
   '/exotic-tours': typeof ExoticToursRoute
   '/hotel': typeof HotelRoute
   '/sightseeing': typeof SightseeingRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/special-events': typeof SpecialEventsRoute
   '/taxi': typeof TaxiRoute
   '/api/public/booking-order': typeof ApiPublicBookingOrderRoute
@@ -137,6 +146,7 @@ export interface FileRouteTypes {
     | '/exotic-tours'
     | '/hotel'
     | '/sightseeing'
+    | '/sitemap.xml'
     | '/special-events'
     | '/taxi'
     | '/api/public/booking-order'
@@ -151,6 +161,7 @@ export interface FileRouteTypes {
     | '/exotic-tours'
     | '/hotel'
     | '/sightseeing'
+    | '/sitemap.xml'
     | '/special-events'
     | '/taxi'
     | '/api/public/booking-order'
@@ -165,6 +176,7 @@ export interface FileRouteTypes {
     | '/exotic-tours'
     | '/hotel'
     | '/sightseeing'
+    | '/sitemap.xml'
     | '/special-events'
     | '/taxi'
     | '/api/public/booking-order'
@@ -180,6 +192,7 @@ export interface RootRouteChildren {
   ExoticToursRoute: typeof ExoticToursRoute
   HotelRoute: typeof HotelRoute
   SightseeingRoute: typeof SightseeingRoute
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   SpecialEventsRoute: typeof SpecialEventsRoute
   TaxiRoute: typeof TaxiRoute
   ApiPublicBookingOrderRoute: typeof ApiPublicBookingOrderRoute
@@ -200,6 +213,13 @@ declare module '@tanstack/react-router' {
       path: '/special-events'
       fullPath: '/special-events'
       preLoaderRoute: typeof SpecialEventsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/sightseeing': {
@@ -284,6 +304,7 @@ const rootRouteChildren: RootRouteChildren = {
   ExoticToursRoute: ExoticToursRoute,
   HotelRoute: HotelRoute,
   SightseeingRoute: SightseeingRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
   SpecialEventsRoute: SpecialEventsRoute,
   TaxiRoute: TaxiRoute,
   ApiPublicBookingOrderRoute: ApiPublicBookingOrderRoute,
