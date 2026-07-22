@@ -11,7 +11,56 @@ import { CAMEL_TOURS, SIGHTSEEING, ADVENTURE, HOME_HERO, DESERT_CAMPS, EXOTIC, E
 const hero = HOME_HERO;
 
 
-export const Route = createFileRoute("/")({ component: Home });
+const SITE_URL = "https://jaisalmerholidays.com";
+
+const HOME_JSONLD = {
+  "@context": "https://schema.org",
+  "@type": "TravelAgency",
+  name: "Jaisalmerholidays",
+  url: SITE_URL,
+  logo: `${SITE_URL}/favicon.ico`,
+  image: HOME_HERO,
+  telephone: "+91 70145 78096",
+  email: "info@jaisalmerholidays.com",
+  priceRange: "₹₹",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Near Jaisalmer Fort",
+    addressLocality: "Jaisalmer",
+    addressRegion: "Rajasthan",
+    postalCode: "345001",
+    addressCountry: "IN",
+  },
+  geo: { "@type": "GeoCoordinates", latitude: 26.9157, longitude: 70.9083 },
+  areaServed: "Jaisalmer, Thar Desert, Rajasthan",
+  sameAs: [] as string[],
+};
+
+export const Route = createFileRoute("/")({
+  component: Home,
+  head: () => ({
+    meta: [
+      { title: "Jaisalmer Desert Safari & Tours | Jaisalmerholidays — Book Now" },
+      {
+        name: "description",
+        content:
+          "Book camel safaris, desert camps and Jaisalmer sightseeing with local guides since 2010. Real Thar Desert, Sam & Khuri dunes, family-friendly. Book Now.",
+      },
+      { property: "og:title", content: "Jaisalmer Desert Safari & Tours | Jaisalmerholidays" },
+      {
+        property: "og:description",
+        content:
+          "Camel safaris, desert camps and Jaisalmer sightseeing tours with local guides in the Thar Desert. Book online in minutes.",
+      },
+      { property: "og:url", content: SITE_URL + "/" },
+      { property: "og:type", content: "website" },
+      { property: "og:image", content: HOME_HERO },
+      { name: "twitter:image", content: HOME_HERO },
+    ],
+    links: [{ rel: "canonical", href: SITE_URL + "/" }],
+    scripts: [{ type: "application/ld+json", children: JSON.stringify(HOME_JSONLD) }],
+  }),
+});
 
 const WORDS = "Jaisalmerholidays".split("");
 
