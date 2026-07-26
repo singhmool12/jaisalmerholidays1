@@ -66,8 +66,10 @@ const TRIP_JSONLD = {
   },
   aggregateRating: {
     "@type": "AggregateRating",
-    ratingValue: "4.9",
-    reviewCount: "412",
+    ratingValue: 4.9,
+    reviewCount: 412,
+    bestRating: 5,
+    worstRating: 1,
   },
 };
 
