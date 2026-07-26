@@ -10,7 +10,9 @@ export const Route = createFileRoute("/adventure")({
       { name: "description", content: "Dune bashing, quad ATV rides and sandboarding in the Thar." },
       { property: "og:title", content: "Adventure Activities in Jaisalmer" },
       { property: "og:description", content: "Adrenaline in the dunes." },
+      { property: "og:url", content: "https://www.jaisalmerholidays.com/adventure" },
     ],
+    links: [{ rel: "canonical", href: "https://www.jaisalmerholidays.com/adventure" }],
   }),
   component: () => (
     <ServicePage
