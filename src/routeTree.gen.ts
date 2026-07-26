@@ -20,6 +20,14 @@ import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CamelSafariRouteImport } from './routes/camel-safari'
 import { Route as AdventureRouteImport } from './routes/adventure'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as BlogIndexRouteImport } from './routes/blog/index'
+import { Route as BlogLodurvaExcursionGuideRouteImport } from './routes/blog/lodurva-excursion-guide'
+import { Route as BlogJaisalmerWarMuseumRouteImport } from './routes/blog/jaisalmer-war-museum'
+import { Route as BlogJaisalmerShoppingGuideRouteImport } from './routes/blog/jaisalmer-shopping-guide'
+import { Route as BlogJaisalmerNightlifeGuideRouteImport } from './routes/blog/jaisalmer-nightlife-guide'
+import { Route as BlogJaisalmerLocalFoodGuideRouteImport } from './routes/blog/jaisalmer-local-food-guide'
+import { Route as BlogJaisalmerHoneymoonCouplesGuideRouteImport } from './routes/blog/jaisalmer-honeymoon-couples-guide'
+import { Route as BlogCandlelightDinnerDesertDiningRouteImport } from './routes/blog/candlelight-dinner-desert-dining'
 import { Route as ApiPublicBookingVerifyRouteImport } from './routes/api/public/booking-verify'
 import { Route as ApiPublicBookingOrderRouteImport } from './routes/api/public/booking-order'
 
@@ -78,6 +86,52 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BlogIndexRoute = BlogIndexRouteImport.update({
+  id: '/blog/',
+  path: '/blog/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogLodurvaExcursionGuideRoute =
+  BlogLodurvaExcursionGuideRouteImport.update({
+    id: '/blog/lodurva-excursion-guide',
+    path: '/blog/lodurva-excursion-guide',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogJaisalmerWarMuseumRoute = BlogJaisalmerWarMuseumRouteImport.update({
+  id: '/blog/jaisalmer-war-museum',
+  path: '/blog/jaisalmer-war-museum',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogJaisalmerShoppingGuideRoute =
+  BlogJaisalmerShoppingGuideRouteImport.update({
+    id: '/blog/jaisalmer-shopping-guide',
+    path: '/blog/jaisalmer-shopping-guide',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogJaisalmerNightlifeGuideRoute =
+  BlogJaisalmerNightlifeGuideRouteImport.update({
+    id: '/blog/jaisalmer-nightlife-guide',
+    path: '/blog/jaisalmer-nightlife-guide',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogJaisalmerLocalFoodGuideRoute =
+  BlogJaisalmerLocalFoodGuideRouteImport.update({
+    id: '/blog/jaisalmer-local-food-guide',
+    path: '/blog/jaisalmer-local-food-guide',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogJaisalmerHoneymoonCouplesGuideRoute =
+  BlogJaisalmerHoneymoonCouplesGuideRouteImport.update({
+    id: '/blog/jaisalmer-honeymoon-couples-guide',
+    path: '/blog/jaisalmer-honeymoon-couples-guide',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogCandlelightDinnerDesertDiningRoute =
+  BlogCandlelightDinnerDesertDiningRouteImport.update({
+    id: '/blog/candlelight-dinner-desert-dining',
+    path: '/blog/candlelight-dinner-desert-dining',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const ApiPublicBookingVerifyRoute = ApiPublicBookingVerifyRouteImport.update({
   id: '/api/public/booking-verify',
   path: '/api/public/booking-verify',
@@ -101,6 +155,14 @@ export interface FileRoutesByFullPath {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/special-events': typeof SpecialEventsRoute
   '/taxi': typeof TaxiRoute
+  '/blog/candlelight-dinner-desert-dining': typeof BlogCandlelightDinnerDesertDiningRoute
+  '/blog/jaisalmer-honeymoon-couples-guide': typeof BlogJaisalmerHoneymoonCouplesGuideRoute
+  '/blog/jaisalmer-local-food-guide': typeof BlogJaisalmerLocalFoodGuideRoute
+  '/blog/jaisalmer-nightlife-guide': typeof BlogJaisalmerNightlifeGuideRoute
+  '/blog/jaisalmer-shopping-guide': typeof BlogJaisalmerShoppingGuideRoute
+  '/blog/jaisalmer-war-museum': typeof BlogJaisalmerWarMuseumRoute
+  '/blog/lodurva-excursion-guide': typeof BlogLodurvaExcursionGuideRoute
+  '/blog/': typeof BlogIndexRoute
   '/api/public/booking-order': typeof ApiPublicBookingOrderRoute
   '/api/public/booking-verify': typeof ApiPublicBookingVerifyRoute
 }
@@ -116,6 +178,14 @@ export interface FileRoutesByTo {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/special-events': typeof SpecialEventsRoute
   '/taxi': typeof TaxiRoute
+  '/blog/candlelight-dinner-desert-dining': typeof BlogCandlelightDinnerDesertDiningRoute
+  '/blog/jaisalmer-honeymoon-couples-guide': typeof BlogJaisalmerHoneymoonCouplesGuideRoute
+  '/blog/jaisalmer-local-food-guide': typeof BlogJaisalmerLocalFoodGuideRoute
+  '/blog/jaisalmer-nightlife-guide': typeof BlogJaisalmerNightlifeGuideRoute
+  '/blog/jaisalmer-shopping-guide': typeof BlogJaisalmerShoppingGuideRoute
+  '/blog/jaisalmer-war-museum': typeof BlogJaisalmerWarMuseumRoute
+  '/blog/lodurva-excursion-guide': typeof BlogLodurvaExcursionGuideRoute
+  '/blog': typeof BlogIndexRoute
   '/api/public/booking-order': typeof ApiPublicBookingOrderRoute
   '/api/public/booking-verify': typeof ApiPublicBookingVerifyRoute
 }
@@ -132,6 +202,14 @@ export interface FileRoutesById {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/special-events': typeof SpecialEventsRoute
   '/taxi': typeof TaxiRoute
+  '/blog/candlelight-dinner-desert-dining': typeof BlogCandlelightDinnerDesertDiningRoute
+  '/blog/jaisalmer-honeymoon-couples-guide': typeof BlogJaisalmerHoneymoonCouplesGuideRoute
+  '/blog/jaisalmer-local-food-guide': typeof BlogJaisalmerLocalFoodGuideRoute
+  '/blog/jaisalmer-nightlife-guide': typeof BlogJaisalmerNightlifeGuideRoute
+  '/blog/jaisalmer-shopping-guide': typeof BlogJaisalmerShoppingGuideRoute
+  '/blog/jaisalmer-war-museum': typeof BlogJaisalmerWarMuseumRoute
+  '/blog/lodurva-excursion-guide': typeof BlogLodurvaExcursionGuideRoute
+  '/blog/': typeof BlogIndexRoute
   '/api/public/booking-order': typeof ApiPublicBookingOrderRoute
   '/api/public/booking-verify': typeof ApiPublicBookingVerifyRoute
 }
@@ -149,6 +227,14 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/special-events'
     | '/taxi'
+    | '/blog/candlelight-dinner-desert-dining'
+    | '/blog/jaisalmer-honeymoon-couples-guide'
+    | '/blog/jaisalmer-local-food-guide'
+    | '/blog/jaisalmer-nightlife-guide'
+    | '/blog/jaisalmer-shopping-guide'
+    | '/blog/jaisalmer-war-museum'
+    | '/blog/lodurva-excursion-guide'
+    | '/blog/'
     | '/api/public/booking-order'
     | '/api/public/booking-verify'
   fileRoutesByTo: FileRoutesByTo
@@ -164,6 +250,14 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/special-events'
     | '/taxi'
+    | '/blog/candlelight-dinner-desert-dining'
+    | '/blog/jaisalmer-honeymoon-couples-guide'
+    | '/blog/jaisalmer-local-food-guide'
+    | '/blog/jaisalmer-nightlife-guide'
+    | '/blog/jaisalmer-shopping-guide'
+    | '/blog/jaisalmer-war-museum'
+    | '/blog/lodurva-excursion-guide'
+    | '/blog'
     | '/api/public/booking-order'
     | '/api/public/booking-verify'
   id:
@@ -179,6 +273,14 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/special-events'
     | '/taxi'
+    | '/blog/candlelight-dinner-desert-dining'
+    | '/blog/jaisalmer-honeymoon-couples-guide'
+    | '/blog/jaisalmer-local-food-guide'
+    | '/blog/jaisalmer-nightlife-guide'
+    | '/blog/jaisalmer-shopping-guide'
+    | '/blog/jaisalmer-war-museum'
+    | '/blog/lodurva-excursion-guide'
+    | '/blog/'
     | '/api/public/booking-order'
     | '/api/public/booking-verify'
   fileRoutesById: FileRoutesById
@@ -195,6 +297,14 @@ export interface RootRouteChildren {
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   SpecialEventsRoute: typeof SpecialEventsRoute
   TaxiRoute: typeof TaxiRoute
+  BlogCandlelightDinnerDesertDiningRoute: typeof BlogCandlelightDinnerDesertDiningRoute
+  BlogJaisalmerHoneymoonCouplesGuideRoute: typeof BlogJaisalmerHoneymoonCouplesGuideRoute
+  BlogJaisalmerLocalFoodGuideRoute: typeof BlogJaisalmerLocalFoodGuideRoute
+  BlogJaisalmerNightlifeGuideRoute: typeof BlogJaisalmerNightlifeGuideRoute
+  BlogJaisalmerShoppingGuideRoute: typeof BlogJaisalmerShoppingGuideRoute
+  BlogJaisalmerWarMuseumRoute: typeof BlogJaisalmerWarMuseumRoute
+  BlogLodurvaExcursionGuideRoute: typeof BlogLodurvaExcursionGuideRoute
+  BlogIndexRoute: typeof BlogIndexRoute
   ApiPublicBookingOrderRoute: typeof ApiPublicBookingOrderRoute
   ApiPublicBookingVerifyRoute: typeof ApiPublicBookingVerifyRoute
 }
@@ -278,6 +388,62 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog/': {
+      id: '/blog/'
+      path: '/blog'
+      fullPath: '/blog/'
+      preLoaderRoute: typeof BlogIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/lodurva-excursion-guide': {
+      id: '/blog/lodurva-excursion-guide'
+      path: '/blog/lodurva-excursion-guide'
+      fullPath: '/blog/lodurva-excursion-guide'
+      preLoaderRoute: typeof BlogLodurvaExcursionGuideRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/jaisalmer-war-museum': {
+      id: '/blog/jaisalmer-war-museum'
+      path: '/blog/jaisalmer-war-museum'
+      fullPath: '/blog/jaisalmer-war-museum'
+      preLoaderRoute: typeof BlogJaisalmerWarMuseumRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/jaisalmer-shopping-guide': {
+      id: '/blog/jaisalmer-shopping-guide'
+      path: '/blog/jaisalmer-shopping-guide'
+      fullPath: '/blog/jaisalmer-shopping-guide'
+      preLoaderRoute: typeof BlogJaisalmerShoppingGuideRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/jaisalmer-nightlife-guide': {
+      id: '/blog/jaisalmer-nightlife-guide'
+      path: '/blog/jaisalmer-nightlife-guide'
+      fullPath: '/blog/jaisalmer-nightlife-guide'
+      preLoaderRoute: typeof BlogJaisalmerNightlifeGuideRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/jaisalmer-local-food-guide': {
+      id: '/blog/jaisalmer-local-food-guide'
+      path: '/blog/jaisalmer-local-food-guide'
+      fullPath: '/blog/jaisalmer-local-food-guide'
+      preLoaderRoute: typeof BlogJaisalmerLocalFoodGuideRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/jaisalmer-honeymoon-couples-guide': {
+      id: '/blog/jaisalmer-honeymoon-couples-guide'
+      path: '/blog/jaisalmer-honeymoon-couples-guide'
+      fullPath: '/blog/jaisalmer-honeymoon-couples-guide'
+      preLoaderRoute: typeof BlogJaisalmerHoneymoonCouplesGuideRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/candlelight-dinner-desert-dining': {
+      id: '/blog/candlelight-dinner-desert-dining'
+      path: '/blog/candlelight-dinner-desert-dining'
+      fullPath: '/blog/candlelight-dinner-desert-dining'
+      preLoaderRoute: typeof BlogCandlelightDinnerDesertDiningRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/api/public/booking-verify': {
       id: '/api/public/booking-verify'
       path: '/api/public/booking-verify'
@@ -307,6 +473,16 @@ const rootRouteChildren: RootRouteChildren = {
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   SpecialEventsRoute: SpecialEventsRoute,
   TaxiRoute: TaxiRoute,
+  BlogCandlelightDinnerDesertDiningRoute:
+    BlogCandlelightDinnerDesertDiningRoute,
+  BlogJaisalmerHoneymoonCouplesGuideRoute:
+    BlogJaisalmerHoneymoonCouplesGuideRoute,
+  BlogJaisalmerLocalFoodGuideRoute: BlogJaisalmerLocalFoodGuideRoute,
+  BlogJaisalmerNightlifeGuideRoute: BlogJaisalmerNightlifeGuideRoute,
+  BlogJaisalmerShoppingGuideRoute: BlogJaisalmerShoppingGuideRoute,
+  BlogJaisalmerWarMuseumRoute: BlogJaisalmerWarMuseumRoute,
+  BlogLodurvaExcursionGuideRoute: BlogLodurvaExcursionGuideRoute,
+  BlogIndexRoute: BlogIndexRoute,
   ApiPublicBookingOrderRoute: ApiPublicBookingOrderRoute,
   ApiPublicBookingVerifyRoute: ApiPublicBookingVerifyRoute,
 }
