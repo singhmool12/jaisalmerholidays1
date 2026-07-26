@@ -40,8 +40,7 @@ function BlogIndex() {
           {BLOG_POSTS.map((p) => (
             <Link
               key={p.slug}
-              to="/blog/$slug"
-              params={{ slug: p.slug }}
+              to={("/blog/" + p.slug) as "/blog"}
               className="group rounded-2xl overflow-hidden bg-white border border-[var(--border)] shadow-sm hover:shadow-md transition"
             >
               <div className="aspect-[16/10] overflow-hidden">
