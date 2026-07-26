@@ -12,7 +12,9 @@ export const Route = createFileRoute("/contact")({
       { name: "description", content: "Reach Jaisalmerholidays on +91 70145 78096 or email info@jaisalmerholidays.com." },
       { property: "og:title", content: "Contact Jaisalmerholidays" },
       { property: "og:description", content: "Talk to us on WhatsApp or call — usually replies within minutes." },
+      { property: "og:url", content: "https://www.jaisalmerholidays.com/contact" },
     ],
+    links: [{ rel: "canonical", href: "https://www.jaisalmerholidays.com/contact" }],
   }),
   component: () => (
     <div className="min-h-screen bg-[var(--cream)] grain-bg" id="top">
