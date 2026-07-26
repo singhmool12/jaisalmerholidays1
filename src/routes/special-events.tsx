@@ -10,7 +10,9 @@ export const Route = createFileRoute("/special-events")({
       { name: "description", content: "Desert weddings, private candlelight dinners, corporate retreats and celebrations in Jaisalmer." },
       { property: "og:title", content: "Special Events in Jaisalmer" },
       { property: "og:description", content: "Weddings, dinners and retreats in the dunes." },
+      { property: "og:url", content: "https://www.jaisalmerholidays.com/special-events" },
     ],
+    links: [{ rel: "canonical", href: "https://www.jaisalmerholidays.com/special-events" }],
   }),
   component: () => (
     <ServicePage

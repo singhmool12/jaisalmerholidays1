@@ -25,7 +25,9 @@ export const Route = createFileRoute("/hotel")({
       { name: "description", content: "Boutique heritage hotel with Super Deluxe King Rooms in the heart of Jaisalmer." },
       { property: "og:title", content: "Our Hotel in Jaisalmer" },
       { property: "og:description", content: "Comfort, character and hospitality in the Golden City." },
+      { property: "og:url", content: "https://www.jaisalmerholidays.com/hotel" },
     ],
+    links: [{ rel: "canonical", href: "https://www.jaisalmerholidays.com/hotel" }],
   }),
   component: Hotel,
 });

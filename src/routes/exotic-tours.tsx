@@ -10,7 +10,9 @@ export const Route = createFileRoute("/exotic-tours")({
       { name: "description", content: "Private sunset picnics, stargazing, royal candlelight dinners and photography tours in the Jaisalmer dunes." },
       { property: "og:title", content: "Exotic Experiences in the Thar" },
       { property: "og:description", content: "Signature private experiences in the dunes." },
+      { property: "og:url", content: "https://www.jaisalmerholidays.com/exotic-tours" },
     ],
+    links: [{ rel: "canonical", href: "https://www.jaisalmerholidays.com/exotic-tours" }],
   }),
   component: () => (
     <ServicePage

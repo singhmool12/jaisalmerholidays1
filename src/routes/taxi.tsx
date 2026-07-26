@@ -10,7 +10,9 @@ export const Route = createFileRoute("/taxi")({
       { name: "description", content: "Self-drive cars, luxury buses, sedans, SUVs and tempo travellers for Jaisalmer sightseeing and Rajasthan tours." },
       { property: "og:title", content: "Taxi & Car Rental in Jaisalmer" },
       { property: "og:description", content: "Self-drive, buses, sedans, SUVs and tempo travellers — call or WhatsApp for a quote." },
+      { property: "og:url", content: "https://www.jaisalmerholidays.com/taxi" },
     ],
+    links: [{ rel: "canonical", href: "https://www.jaisalmerholidays.com/taxi" }],
   }),
   component: () => (
     <ServicePage
