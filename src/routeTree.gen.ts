@@ -9,6 +9,7 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as TourPackagesRouteImport } from './routes/tour-packages'
 import { Route as TaxiRouteImport } from './routes/taxi'
 import { Route as SpecialEventsRouteImport } from './routes/special-events'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
@@ -21,6 +22,7 @@ import { Route as CamelSafariRouteImport } from './routes/camel-safari'
 import { Route as AdventureRouteImport } from './routes/adventure'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as BlogIndexRouteImport } from './routes/blog/index'
+import { Route as BlogSamSandDunesGuideRouteImport } from './routes/blog/sam-sand-dunes-guide'
 import { Route as BlogLodurvaExcursionGuideRouteImport } from './routes/blog/lodurva-excursion-guide'
 import { Route as BlogJaisalmerWarMuseumRouteImport } from './routes/blog/jaisalmer-war-museum'
 import { Route as BlogJaisalmerShoppingGuideRouteImport } from './routes/blog/jaisalmer-shopping-guide'
@@ -31,6 +33,11 @@ import { Route as BlogCandlelightDinnerDesertDiningRouteImport } from './routes/
 import { Route as ApiPublicBookingVerifyRouteImport } from './routes/api/public/booking-verify'
 import { Route as ApiPublicBookingOrderRouteImport } from './routes/api/public/booking-order'
 
+const TourPackagesRoute = TourPackagesRouteImport.update({
+  id: '/tour-packages',
+  path: '/tour-packages',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const TaxiRoute = TaxiRouteImport.update({
   id: '/taxi',
   path: '/taxi',
@@ -89,6 +96,11 @@ const IndexRoute = IndexRouteImport.update({
 const BlogIndexRoute = BlogIndexRouteImport.update({
   id: '/blog/',
   path: '/blog/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogSamSandDunesGuideRoute = BlogSamSandDunesGuideRouteImport.update({
+  id: '/blog/sam-sand-dunes-guide',
+  path: '/blog/sam-sand-dunes-guide',
   getParentRoute: () => rootRouteImport,
 } as any)
 const BlogLodurvaExcursionGuideRoute =
@@ -155,6 +167,7 @@ export interface FileRoutesByFullPath {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/special-events': typeof SpecialEventsRoute
   '/taxi': typeof TaxiRoute
+  '/tour-packages': typeof TourPackagesRoute
   '/blog/candlelight-dinner-desert-dining': typeof BlogCandlelightDinnerDesertDiningRoute
   '/blog/jaisalmer-honeymoon-couples-guide': typeof BlogJaisalmerHoneymoonCouplesGuideRoute
   '/blog/jaisalmer-local-food-guide': typeof BlogJaisalmerLocalFoodGuideRoute
@@ -162,6 +175,7 @@ export interface FileRoutesByFullPath {
   '/blog/jaisalmer-shopping-guide': typeof BlogJaisalmerShoppingGuideRoute
   '/blog/jaisalmer-war-museum': typeof BlogJaisalmerWarMuseumRoute
   '/blog/lodurva-excursion-guide': typeof BlogLodurvaExcursionGuideRoute
+  '/blog/sam-sand-dunes-guide': typeof BlogSamSandDunesGuideRoute
   '/blog/': typeof BlogIndexRoute
   '/api/public/booking-order': typeof ApiPublicBookingOrderRoute
   '/api/public/booking-verify': typeof ApiPublicBookingVerifyRoute
@@ -178,6 +192,7 @@ export interface FileRoutesByTo {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/special-events': typeof SpecialEventsRoute
   '/taxi': typeof TaxiRoute
+  '/tour-packages': typeof TourPackagesRoute
   '/blog/candlelight-dinner-desert-dining': typeof BlogCandlelightDinnerDesertDiningRoute
   '/blog/jaisalmer-honeymoon-couples-guide': typeof BlogJaisalmerHoneymoonCouplesGuideRoute
   '/blog/jaisalmer-local-food-guide': typeof BlogJaisalmerLocalFoodGuideRoute
@@ -185,6 +200,7 @@ export interface FileRoutesByTo {
   '/blog/jaisalmer-shopping-guide': typeof BlogJaisalmerShoppingGuideRoute
   '/blog/jaisalmer-war-museum': typeof BlogJaisalmerWarMuseumRoute
   '/blog/lodurva-excursion-guide': typeof BlogLodurvaExcursionGuideRoute
+  '/blog/sam-sand-dunes-guide': typeof BlogSamSandDunesGuideRoute
   '/blog': typeof BlogIndexRoute
   '/api/public/booking-order': typeof ApiPublicBookingOrderRoute
   '/api/public/booking-verify': typeof ApiPublicBookingVerifyRoute
@@ -202,6 +218,7 @@ export interface FileRoutesById {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/special-events': typeof SpecialEventsRoute
   '/taxi': typeof TaxiRoute
+  '/tour-packages': typeof TourPackagesRoute
   '/blog/candlelight-dinner-desert-dining': typeof BlogCandlelightDinnerDesertDiningRoute
   '/blog/jaisalmer-honeymoon-couples-guide': typeof BlogJaisalmerHoneymoonCouplesGuideRoute
   '/blog/jaisalmer-local-food-guide': typeof BlogJaisalmerLocalFoodGuideRoute
@@ -209,6 +226,7 @@ export interface FileRoutesById {
   '/blog/jaisalmer-shopping-guide': typeof BlogJaisalmerShoppingGuideRoute
   '/blog/jaisalmer-war-museum': typeof BlogJaisalmerWarMuseumRoute
   '/blog/lodurva-excursion-guide': typeof BlogLodurvaExcursionGuideRoute
+  '/blog/sam-sand-dunes-guide': typeof BlogSamSandDunesGuideRoute
   '/blog/': typeof BlogIndexRoute
   '/api/public/booking-order': typeof ApiPublicBookingOrderRoute
   '/api/public/booking-verify': typeof ApiPublicBookingVerifyRoute
@@ -227,6 +245,7 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/special-events'
     | '/taxi'
+    | '/tour-packages'
     | '/blog/candlelight-dinner-desert-dining'
     | '/blog/jaisalmer-honeymoon-couples-guide'
     | '/blog/jaisalmer-local-food-guide'
@@ -234,6 +253,7 @@ export interface FileRouteTypes {
     | '/blog/jaisalmer-shopping-guide'
     | '/blog/jaisalmer-war-museum'
     | '/blog/lodurva-excursion-guide'
+    | '/blog/sam-sand-dunes-guide'
     | '/blog/'
     | '/api/public/booking-order'
     | '/api/public/booking-verify'
@@ -250,6 +270,7 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/special-events'
     | '/taxi'
+    | '/tour-packages'
     | '/blog/candlelight-dinner-desert-dining'
     | '/blog/jaisalmer-honeymoon-couples-guide'
     | '/blog/jaisalmer-local-food-guide'
@@ -257,6 +278,7 @@ export interface FileRouteTypes {
     | '/blog/jaisalmer-shopping-guide'
     | '/blog/jaisalmer-war-museum'
     | '/blog/lodurva-excursion-guide'
+    | '/blog/sam-sand-dunes-guide'
     | '/blog'
     | '/api/public/booking-order'
     | '/api/public/booking-verify'
@@ -273,6 +295,7 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/special-events'
     | '/taxi'
+    | '/tour-packages'
     | '/blog/candlelight-dinner-desert-dining'
     | '/blog/jaisalmer-honeymoon-couples-guide'
     | '/blog/jaisalmer-local-food-guide'
@@ -280,6 +303,7 @@ export interface FileRouteTypes {
     | '/blog/jaisalmer-shopping-guide'
     | '/blog/jaisalmer-war-museum'
     | '/blog/lodurva-excursion-guide'
+    | '/blog/sam-sand-dunes-guide'
     | '/blog/'
     | '/api/public/booking-order'
     | '/api/public/booking-verify'
@@ -297,6 +321,7 @@ export interface RootRouteChildren {
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   SpecialEventsRoute: typeof SpecialEventsRoute
   TaxiRoute: typeof TaxiRoute
+  TourPackagesRoute: typeof TourPackagesRoute
   BlogCandlelightDinnerDesertDiningRoute: typeof BlogCandlelightDinnerDesertDiningRoute
   BlogJaisalmerHoneymoonCouplesGuideRoute: typeof BlogJaisalmerHoneymoonCouplesGuideRoute
   BlogJaisalmerLocalFoodGuideRoute: typeof BlogJaisalmerLocalFoodGuideRoute
@@ -304,6 +329,7 @@ export interface RootRouteChildren {
   BlogJaisalmerShoppingGuideRoute: typeof BlogJaisalmerShoppingGuideRoute
   BlogJaisalmerWarMuseumRoute: typeof BlogJaisalmerWarMuseumRoute
   BlogLodurvaExcursionGuideRoute: typeof BlogLodurvaExcursionGuideRoute
+  BlogSamSandDunesGuideRoute: typeof BlogSamSandDunesGuideRoute
   BlogIndexRoute: typeof BlogIndexRoute
   ApiPublicBookingOrderRoute: typeof ApiPublicBookingOrderRoute
   ApiPublicBookingVerifyRoute: typeof ApiPublicBookingVerifyRoute
@@ -311,6 +337,13 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/tour-packages': {
+      id: '/tour-packages'
+      path: '/tour-packages'
+      fullPath: '/tour-packages'
+      preLoaderRoute: typeof TourPackagesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/taxi': {
       id: '/taxi'
       path: '/taxi'
@@ -395,6 +428,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog/sam-sand-dunes-guide': {
+      id: '/blog/sam-sand-dunes-guide'
+      path: '/blog/sam-sand-dunes-guide'
+      fullPath: '/blog/sam-sand-dunes-guide'
+      preLoaderRoute: typeof BlogSamSandDunesGuideRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog/lodurva-excursion-guide': {
       id: '/blog/lodurva-excursion-guide'
       path: '/blog/lodurva-excursion-guide'
@@ -473,6 +513,7 @@ const rootRouteChildren: RootRouteChildren = {
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   SpecialEventsRoute: SpecialEventsRoute,
   TaxiRoute: TaxiRoute,
+  TourPackagesRoute: TourPackagesRoute,
   BlogCandlelightDinnerDesertDiningRoute:
     BlogCandlelightDinnerDesertDiningRoute,
   BlogJaisalmerHoneymoonCouplesGuideRoute:
@@ -482,6 +523,7 @@ const rootRouteChildren: RootRouteChildren = {
   BlogJaisalmerShoppingGuideRoute: BlogJaisalmerShoppingGuideRoute,
   BlogJaisalmerWarMuseumRoute: BlogJaisalmerWarMuseumRoute,
   BlogLodurvaExcursionGuideRoute: BlogLodurvaExcursionGuideRoute,
+  BlogSamSandDunesGuideRoute: BlogSamSandDunesGuideRoute,
   BlogIndexRoute: BlogIndexRoute,
   ApiPublicBookingOrderRoute: ApiPublicBookingOrderRoute,
   ApiPublicBookingVerifyRoute: ApiPublicBookingVerifyRoute,

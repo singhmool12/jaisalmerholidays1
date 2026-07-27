@@ -21,14 +21,15 @@ export function Footer() {
         </div>
         <div className="flex flex-col gap-2">
           <p className="font-semibold text-[var(--gold)] mb-1">Travel</p>
+          <Link to="/tour-packages" className="opacity-80 hover:opacity-100">Tour Packages</Link>
           <Link to="/sightseeing" className="opacity-80 hover:opacity-100">Sightseeing</Link>
           <Link to="/exotic-tours" className="opacity-80 hover:opacity-100">Exotic Tours</Link>
           <Link to="/hotel" className="opacity-80 hover:opacity-100">Hotel</Link>
-          
         </div>
         <div className="flex flex-col gap-2">
           <p className="font-semibold text-[var(--gold)] mb-1">Company</p>
           <Link to="/contact" className="opacity-80 hover:opacity-100">Contact</Link>
+          <Link to="/blog" className="opacity-80 hover:opacity-100">Blog</Link>
           <a href="#" className="opacity-80 hover:opacity-100">About Us</a>
           <a href="#" className="opacity-80 hover:opacity-100">Travel Safe</a>
         </div>

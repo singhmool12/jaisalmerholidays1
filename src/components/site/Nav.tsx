@@ -7,13 +7,16 @@ import logo from "@/assets/logo.png";
 
 const NAV = [
   { label: "Home", to: "/" },
+  { label: "Tour Packages", to: "/tour-packages" },
   { label: "Hotel", to: "/hotel" },
   { label: "Events", to: "/special-events" },
+  { label: "Blog", to: "/blog" },
   { label: "Contact", to: "/contact" },
 ] as const;
 
 const MOBILE_NAV = [
   { label: "Home", to: "/" },
+  { label: "Tour Packages", to: "/tour-packages" },
   { label: "Camel Safari", to: "/camel-safari" },
   { label: "Desert Camp", to: "/desert-camp" },
   { label: "Sightseeing", to: "/sightseeing" },
@@ -22,6 +25,7 @@ const MOBILE_NAV = [
   { label: "Special Events", to: "/special-events" },
   { label: "Hotel", to: "/hotel" },
   { label: "Taxi", to: "/taxi" },
+  { label: "Blog", to: "/blog" },
   { label: "Contact", to: "/contact" },
 ] as const;
 
@@ -82,7 +86,7 @@ export function Nav() {
           <motion.div
             initial={{ opacity: 0, y: -8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.2 }}
-            className="md:hidden border-t border-[var(--border)] bg-[var(--cream)]"
+            className="md:hidden border-t border-[var(--border)] bg-[var(--cream)] max-h-[80vh] overflow-y-auto"
           >
             <nav className="max-w-7xl mx-auto px-4 py-3 flex flex-col">
               {MOBILE_NAV.map((n) => (

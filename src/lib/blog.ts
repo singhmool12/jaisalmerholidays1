@@ -1,3 +1,12 @@
+import honeymoon from "@/assets/blog/honeymoon.jpg";
+import nightlife from "@/assets/blog/nightlife.jpg";
+import lodurva from "@/assets/blog/lodurva.jpg";
+import warMuseum from "@/assets/blog/war-museum.jpg";
+import food from "@/assets/blog/food.jpg";
+import shopping from "@/assets/blog/shopping.jpg";
+import candlelight from "@/assets/blog/candlelight.jpg";
+import samDunes from "@/assets/blog/sam-dunes.jpg";
+
 export type BlogSummary = {
   slug: string;
   title: string;
@@ -13,7 +22,7 @@ export const BLOG_POSTS: BlogSummary[] = [
     title: "Jaisalmer for Couples: Honeymoon & Romantic Getaway Guide",
     description:
       "Plan a romantic Jaisalmer honeymoon — heritage hotel stays, luxury desert camps, private candlelight dinners and sunset picnics in the Thar. Book now.",
-    cover: "https://loremflickr.com/1600/900/jaisalmer,candlelight,dinner?lock=201",
+    cover: honeymoon,
     datePublished: "2025-01-12",
   },
   {
@@ -21,7 +30,7 @@ export const BLOG_POSTS: BlogSummary[] = [
     title: "Jaisalmer Nightlife: What Happens After Sunset",
     description:
       "Nightlife in Jaisalmer isn't clubs — it's bonfires, folk music, cultural evenings in desert camps and quiet fort-view dinners in the old city.",
-    cover: "https://loremflickr.com/1600/900/jaisalmer,bonfire,folk?lock=202",
+    cover: nightlife,
     datePublished: "2025-01-18",
   },
   {
@@ -29,7 +38,7 @@ export const BLOG_POSTS: BlogSummary[] = [
     title: "Lodurva & Amar Sagar: A Half-Day Excursion from Jaisalmer",
     description:
       "Visit the Lodurva Jain temple complex and Amar Sagar on an easy half-day excursion from Jaisalmer. Distance, timings and how to pair it with sightseeing.",
-    cover: "https://loremflickr.com/1600/900/jain,temple,rajasthan?lock=203",
+    cover: lodurva,
     datePublished: "2025-01-24",
   },
   {
@@ -37,7 +46,7 @@ export const BLOG_POSTS: BlogSummary[] = [
     title: "Jaisalmer War Museum: A Tribute to the 1971 War",
     description:
       "The Jaisalmer War Museum honours the 1971 Indo-Pak war with tanks, aircraft and exhibits from the Battle of Longewala. What to expect on your visit.",
-    cover: "https://loremflickr.com/1600/900/war,museum,tank?lock=204",
+    cover: warMuseum,
     datePublished: "2025-02-02",
   },
   {
@@ -45,7 +54,7 @@ export const BLOG_POSTS: BlogSummary[] = [
     title: "What to Eat in Jaisalmer: A Local Food Guide",
     description:
       "Rajasthani thali, ker sangri, dal baati churma and desert-camp dinners — a local food guide to what makes Jaisalmer's cuisine unforgettable.",
-    cover: "https://loremflickr.com/1600/900/rajasthani,thali,food?lock=205",
+    cover: food,
     datePublished: "2025-02-08",
   },
   {
@@ -53,7 +62,7 @@ export const BLOG_POSTS: BlogSummary[] = [
     title: "Jaisalmer Shopping Guide: Textiles, Mirror Work & Handicrafts",
     description:
       "Shopping in Jaisalmer — embroidered textiles, mirror work, leather, silver jewelry and where to browse in the bazaars around Jaisalmer Fort.",
-    cover: "https://loremflickr.com/1600/900/jaisalmer,bazaar,textile?lock=206",
+    cover: shopping,
     datePublished: "2025-02-15",
   },
   {
@@ -61,10 +70,20 @@ export const BLOG_POSTS: BlogSummary[] = [
     title: "Private Candlelight Dinners & Desert Dining Experiences",
     description:
       "Book a private candlelight dinner in the Jaisalmer dunes — royal thalis, sunset picnics and cultural evenings set up just for you. Book now.",
-    cover: "https://loremflickr.com/1600/900/candlelight,dinner,dunes?lock=207",
+    cover: candlelight,
     datePublished: "2025-02-22",
+  },
+  {
+    slug: "sam-sand-dunes-guide",
+    title: "Sam Sand Dunes: Everything You Need to Know",
+    description:
+      "What makes Sam Sand Dunes Jaisalmer's most popular desert destination — access, timing, and why it's the base for camps and camel safaris.",
+    cover: samDunes,
+    datePublished: "2025-03-02",
   },
 ];
 
 export const SITE_URL = "https://www.jaisalmerholidays.com";
 export const blogUrl = (slug: string) => `${SITE_URL}/blog/${slug}`;
+// Absolute URL for a cover image (used in og:image / JSON-LD image fields).
+export const absoluteCover = (cover: string) => (cover.startsWith("http") ? cover : SITE_URL + cover);

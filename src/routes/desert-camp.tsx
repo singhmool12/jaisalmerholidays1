@@ -6,10 +6,10 @@ const hero = DESERT_CAMPS[0].image;
 export const Route = createFileRoute("/desert-camp")({
   head: () => ({
     meta: [
-      { title: "Desert Camp in Jaisalmer — Jaisalmerholidays" },
-      { name: "description", content: "Luxury, deluxe and standard desert camps in the Sam sand dunes with dinner, folk music and camel rides." },
-      { property: "og:title", content: "Desert Camp in Jaisalmer" },
-      { property: "og:description", content: "Stay in luxury swiss tents under the Thar sky." },
+      { title: "Desert Camp in Jaisalmer | Jaisalmer Holidays" },
+      { name: "description", content: "Luxury, deluxe and standard desert camps in the Sam sand dunes — part of your perfect Jaisalmer holidays. Dinner, folk music and camel rides included." },
+      { property: "og:title", content: "Desert Camp in Jaisalmer | Jaisalmer Holidays" },
+      { property: "og:description", content: "Luxury, deluxe and standard desert camps in the Sam sand dunes — part of your perfect Jaisalmer holidays. Dinner, folk music and camel rides included." },
       { property: "og:url", content: "https://www.jaisalmerholidays.com/desert-camp" },
     ],
     links: [{ rel: "canonical", href: "https://www.jaisalmerholidays.com/desert-camp" }],

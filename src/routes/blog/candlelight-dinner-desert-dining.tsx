@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { BlogPost, blogPostJsonLd } from "@/components/site/BlogPost";
-import { BLOG_POSTS, blogUrl } from "@/lib/blog";
+import { BLOG_POSTS, blogUrl, absoluteCover } from "@/lib/blog";
 
 const post = BLOG_POSTS.find((p) => p.slug === "candlelight-dinner-desert-dining")!;
 const PAGE_URL = blogUrl(post.slug);
@@ -14,12 +14,12 @@ export const Route = createFileRoute("/blog/candlelight-dinner-desert-dining")({
       { property: "og:description", content: post.description },
       { property: "og:url", content: PAGE_URL },
       { property: "og:type", content: "article" },
-      { property: "og:image", content: post.cover },
-      { name: "twitter:image", content: post.cover },
+      { property: "og:image", content: absoluteCover(post.cover) },
+      { name: "twitter:image", content: absoluteCover(post.cover) },
     ],
     links: [{ rel: "canonical", href: PAGE_URL }],
     scripts: [
-      { type: "application/ld+json", children: JSON.stringify(blogPostJsonLd({ url: PAGE_URL, title: post.title, description: post.description, image: post.cover, datePublished: post.datePublished })) },
+      { type: "application/ld+json", children: JSON.stringify(blogPostJsonLd({ url: PAGE_URL, title: post.title, description: post.description, image: absoluteCover(post.cover), datePublished: post.datePublished })) },
     ],
   }),
   component: Page,

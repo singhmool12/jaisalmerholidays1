@@ -76,17 +76,17 @@ const TRIP_JSONLD = {
 export const Route = createFileRoute("/camel-safari")({
   head: () => ({
     meta: [
-      { title: "Camel Safari in Jaisalmer | Jaisalmerholidays — Book Now" },
+      { title: "Camel Safari in Jaisalmer | Jaisalmer Holidays" },
       {
         name: "description",
         content:
-          "Book a camel safari in Jaisalmer with local guides — half-day, overnight and multi-day rides across the Thar Desert, Sam & Khuri dunes. Book Now.",
+          "Half-day, overnight and multi-day camel safaris through the Thar Desert — a highlight of any Jaisalmer holidays. Local guides, non-touristic routes.",
       },
-      { property: "og:title", content: "Camel Safari in Jaisalmer | Jaisalmerholidays" },
+      { property: "og:title", content: "Camel Safari in Jaisalmer | Jaisalmer Holidays" },
       {
         property: "og:description",
         content:
-          "Non-touristic camel safaris in the Thar Desert since 2010 — sunrise, sunset, overnight and multi-day trips with meals and cultural evenings.",
+          "Half-day, overnight and multi-day camel safaris through the Thar Desert — a highlight of any Jaisalmer holidays. Local guides, non-touristic routes.",
       },
       { property: "og:url", content: PAGE_URL },
       { property: "og:type", content: "article" },

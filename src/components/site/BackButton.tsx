@@ -1,4 +1,4 @@
-import { useRouter, Link } from "@tanstack/react-router";
+import { useRouter } from "@tanstack/react-router";
 import { ArrowLeft } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -7,20 +7,17 @@ const cls =
 
 export function BackButton() {
   const router = useRouter();
-  const canBack = typeof window !== "undefined" && window.history.length > 1;
   const anim = { whileTap: { scale: 0.82 }, whileHover: { scale: 1.06 }, transition: { type: "spring" as const, stiffness: 500, damping: 18 } };
-  if (canBack) {
-    return (
-      <motion.button {...anim} onClick={() => router.history.back()} aria-label="Go back" className={cls}>
-        <ArrowLeft size={20} />
-      </motion.button>
-    );
-  }
+  const onClick = () => {
+    if (typeof window !== "undefined" && window.history.length > 1) {
+      router.history.back();
+    } else {
+      router.navigate({ to: "/" });
+    }
+  };
   return (
-    <motion.div {...anim} className="inline-block">
-      <Link to="/" aria-label="Home" className={cls}>
-        <ArrowLeft size={20} />
-      </Link>
-    </motion.div>
+    <motion.button {...anim} onClick={onClick} aria-label="Go back" type="button" className={cls}>
+      <ArrowLeft size={20} />
+    </motion.button>
   );
 }

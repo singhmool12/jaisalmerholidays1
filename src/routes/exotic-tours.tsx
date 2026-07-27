@@ -6,10 +6,10 @@ const hero = EXOTIC[2].image;
 export const Route = createFileRoute("/exotic-tours")({
   head: () => ({
     meta: [
-      { title: "Exotic Experiences in the Thar — Jaisalmerholidays" },
-      { name: "description", content: "Private sunset picnics, stargazing, royal candlelight dinners and photography tours in the Jaisalmer dunes." },
-      { property: "og:title", content: "Exotic Experiences in the Thar" },
-      { property: "og:description", content: "Signature private experiences in the dunes." },
+      { title: "Private Desert Experiences in Jaisalmer | Jaisalmer Holidays" },
+      { name: "description", content: "Sunset picnics, candlelight dinners and stargazing — signature private experiences for a memorable Jaisalmer holiday." },
+      { property: "og:title", content: "Private Desert Experiences in Jaisalmer | Jaisalmer Holidays" },
+      { property: "og:description", content: "Sunset picnics, candlelight dinners and stargazing — signature private experiences for a memorable Jaisalmer holiday." },
       { property: "og:url", content: "https://www.jaisalmerholidays.com/exotic-tours" },
     ],
     links: [{ rel: "canonical", href: "https://www.jaisalmerholidays.com/exotic-tours" }],
