@@ -6,10 +6,10 @@ const hero = ADVENTURE[0].image;
 export const Route = createFileRoute("/adventure")({
   head: () => ({
     meta: [
-      { title: "Adventure Activities in Jaisalmer — Jaisalmerholidays" },
-      { name: "description", content: "Dune bashing, quad ATV rides and sandboarding in the Thar." },
-      { property: "og:title", content: "Adventure Activities in Jaisalmer" },
-      { property: "og:description", content: "Adrenaline in the dunes." },
+      { title: "Adventure Activities in Jaisalmer | Jaisalmer Holidays" },
+      { name: "description", content: "Dune bashing, quad ATV rides and sandboarding — add some adrenaline to your Jaisalmer holidays in the Thar Desert." },
+      { property: "og:title", content: "Adventure Activities in Jaisalmer | Jaisalmer Holidays" },
+      { property: "og:description", content: "Dune bashing, quad ATV rides and sandboarding — add some adrenaline to your Jaisalmer holidays in the Thar Desert." },
       { property: "og:url", content: "https://www.jaisalmerholidays.com/adventure" },
     ],
     links: [{ rel: "canonical", href: "https://www.jaisalmerholidays.com/adventure" }],

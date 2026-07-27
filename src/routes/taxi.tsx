@@ -6,10 +6,10 @@ const hero = "https://jaisalmerholidays.lovable.app/__l5e/assets-v1/bbbcba69-6d0
 export const Route = createFileRoute("/taxi")({
   head: () => ({
     meta: [
-      { title: "Taxi & Car Rental in Jaisalmer — Jaisalmerholidays" },
-      { name: "description", content: "Self-drive cars, luxury buses, sedans, SUVs and tempo travellers for Jaisalmer sightseeing and Rajasthan tours." },
-      { property: "og:title", content: "Taxi & Car Rental in Jaisalmer" },
-      { property: "og:description", content: "Self-drive, buses, sedans, SUVs and tempo travellers — call or WhatsApp for a quote." },
+      { title: "Taxi & Car Rental in Jaisalmer | Jaisalmer Holidays" },
+      { name: "description", content: "Self-drive cars, sedans, SUVs and tempo travellers for Jaisalmer sightseeing and Rajasthan tours — reliable transport for your Jaisalmer holidays." },
+      { property: "og:title", content: "Taxi & Car Rental in Jaisalmer | Jaisalmer Holidays" },
+      { property: "og:description", content: "Self-drive cars, sedans, SUVs and tempo travellers for Jaisalmer sightseeing and Rajasthan tours — reliable transport for your Jaisalmer holidays." },
       { property: "og:url", content: "https://www.jaisalmerholidays.com/taxi" },
     ],
     links: [{ rel: "canonical", href: "https://www.jaisalmerholidays.com/taxi" }],

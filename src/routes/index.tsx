@@ -40,17 +40,17 @@ export const Route = createFileRoute("/")({
   component: Home,
   head: () => ({
     meta: [
-      { title: "Jaisalmer Desert Safari & Tours | Jaisalmerholidays — Book Now" },
+      { title: "Jaisalmer Holidays — Desert Safari, Camps & Tours | Book Now" },
       {
         name: "description",
         content:
-          "Book camel safaris, desert camps and Jaisalmer sightseeing with local guides since 2010. Real Thar Desert, Sam & Khuri dunes, family-friendly. Book Now.",
+          "Plan your Jaisalmer holidays with camel safaris, desert camps and sightseeing tours by local guides since 2010. Real Thar Desert experiences in Sam & Khuri dunes. Book now.",
       },
-      { property: "og:title", content: "Jaisalmer Desert Safari & Tours | Jaisalmerholidays" },
+      { property: "og:title", content: "Jaisalmer Holidays — Desert Safari, Camps & Tours | Book Now" },
       {
         property: "og:description",
         content:
-          "Camel safaris, desert camps and Jaisalmer sightseeing tours with local guides in the Thar Desert. Book online in minutes.",
+          "Plan your Jaisalmer holidays with camel safaris, desert camps and sightseeing tours by local guides since 2010. Real Thar Desert experiences in Sam & Khuri dunes. Book now.",
       },
       { property: "og:url", content: SITE_URL + "/" },
       { property: "og:type", content: "website" },

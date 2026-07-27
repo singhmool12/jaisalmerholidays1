@@ -21,10 +21,10 @@ import { telLink, tourWaLink } from "@/lib/brand";
 export const Route = createFileRoute("/hotel")({
   head: () => ({
     meta: [
-      { title: "Our Hotel in Jaisalmer — Jaisalmerholidays" },
-      { name: "description", content: "Boutique heritage hotel with Super Deluxe King Rooms in the heart of Jaisalmer." },
-      { property: "og:title", content: "Our Hotel in Jaisalmer" },
-      { property: "og:description", content: "Comfort, character and hospitality in the Golden City." },
+      { title: "Heritage Hotel in Jaisalmer | Jaisalmer Holidays" },
+      { name: "description", content: "Boutique heritage hotel with Super Deluxe King Rooms in the heart of Jaisalmer — comfortable stays for your Jaisalmer holidays." },
+      { property: "og:title", content: "Heritage Hotel in Jaisalmer | Jaisalmer Holidays" },
+      { property: "og:description", content: "Boutique heritage hotel with Super Deluxe King Rooms in the heart of Jaisalmer — comfortable stays for your Jaisalmer holidays." },
       { property: "og:url", content: "https://www.jaisalmerholidays.com/hotel" },
     ],
     links: [{ rel: "canonical", href: "https://www.jaisalmerholidays.com/hotel" }],

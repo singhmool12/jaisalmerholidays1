@@ -6,10 +6,10 @@ const hero = SIGHTSEEING[0].image;
 export const Route = createFileRoute("/sightseeing")({
   head: () => ({
     meta: [
-      { title: "Sightseeing in Jaisalmer — Jaisalmerholidays" },
-      { name: "description", content: "Jaisalmer Fort, Patwon ki Haveli, Gadisar Lake, Kuldhara, Bada Bagh, Sam dunes and border tours." },
-      { property: "og:title", content: "Sightseeing in Jaisalmer" },
-      { property: "og:description", content: "The best of Jaisalmer with local guides." },
+      { title: "Jaisalmer Sightseeing Tours | Jaisalmer Holidays" },
+      { name: "description", content: "Explore Jaisalmer Fort, Patwon ki Haveli, Gadisar Lake, Kuldhara and Bada Bagh — the essential sightseeing stops on your Jaisalmer holidays." },
+      { property: "og:title", content: "Jaisalmer Sightseeing Tours | Jaisalmer Holidays" },
+      { property: "og:description", content: "Explore Jaisalmer Fort, Patwon ki Haveli, Gadisar Lake, Kuldhara and Bada Bagh — the essential sightseeing stops on your Jaisalmer holidays." },
       { property: "og:url", content: "https://www.jaisalmerholidays.com/sightseeing" },
     ],
     links: [{ rel: "canonical", href: "https://www.jaisalmerholidays.com/sightseeing" }],
