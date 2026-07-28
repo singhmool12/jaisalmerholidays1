@@ -97,10 +97,10 @@ const JSONLD = {
 export const Route = createFileRoute("/tour-packages")({
   head: () => ({
     meta: [
-      { title: "Jaisalmer Tour Packages | Jaisalmer Holidays" },
-      { name: "description", content: "Sample Jaisalmer tour packages combining desert camps, camel safaris, sightseeing and heritage hotel stays. Build your perfect itinerary." },
-      { property: "og:title", content: "Jaisalmer Tour Packages | Jaisalmer Holidays" },
-      { property: "og:description", content: "Sample Jaisalmer tour packages combining desert camps, camel safaris, sightseeing and heritage hotel stays. Build your perfect itinerary." },
+      { title: "Best Jaisalmer Tour Packages | Desert & City Tours" },
+      { name: "description", content: "Explore affordable Jaisalmer tour packages including desert safari, sightseeing, camp stays, and camel rides. Customizable itineraries at the best prices." },
+      { property: "og:title", content: "Best Jaisalmer Tour Packages | Desert & City Tours" },
+      { property: "og:description", content: "Explore affordable Jaisalmer tour packages including desert safari, sightseeing, camp stays, and camel rides. Customizable itineraries at the best prices." },
       { property: "og:url", content: PAGE_URL },
       { property: "og:type", content: "website" },
       { property: "og:image", content: hero },
