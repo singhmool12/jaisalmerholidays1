@@ -76,17 +76,17 @@ const TRIP_JSONLD = {
 export const Route = createFileRoute("/camel-safari")({
   head: () => ({
     meta: [
-      { title: "Camel Safari in Jaisalmer | Jaisalmer Holidays" },
+      { title: "Camel Safari Jaisalmer | Book Sam Sand Dunes Ride" },
       {
         name: "description",
         content:
-          "Half-day, overnight and multi-day camel safaris through the Thar Desert — a highlight of any Jaisalmer holidays. Local guides, non-touristic routes.",
+          "Experience the best camel safari in Jaisalmer at Sam Sand Dunes. Sunset rides, overnight desert camping, and guided tours with Jaisalmer Holidays.",
       },
-      { property: "og:title", content: "Camel Safari in Jaisalmer | Jaisalmer Holidays" },
+      { property: "og:title", content: "Camel Safari Jaisalmer | Book Sam Sand Dunes Ride" },
       {
         property: "og:description",
         content:
-          "Half-day, overnight and multi-day camel safaris through the Thar Desert — a highlight of any Jaisalmer holidays. Local guides, non-touristic routes.",
+          "Experience the best camel safari in Jaisalmer at Sam Sand Dunes. Sunset rides, overnight desert camping, and guided tours with Jaisalmer Holidays.",
       },
       { property: "og:url", content: PAGE_URL },
       { property: "og:type", content: "article" },
@@ -108,7 +108,7 @@ function CamelSafariPage() {
       <ServicePage
         hero={hero}
         kicker="Since 2010"
-        title="Camel Safari in Jaisalmer"
+        title="Camel Safari in Jaisalmer: Sam Sand Dunes Experience"
         subtitle="Non-touristic tracks, real desert, and a night sky you won't forget."
         intro="A camel safari in Jaisalmer is the single best way to feel the Thar Desert — the slow sway of the camel, warm sand crunching underfoot, chai brewed over an open fire, and a sunrise that turns the dunes gold. We ride away from the crowded Sam Sand Dunes strip into quieter belts near Khuri and beyond, sleep on cotton bedding under the open sky, and share a proper Rajasthani dinner cooked in the sand. Whether you want a two-hour sunrise ride, an overnight in the dunes with folk music, or an eight-day expedition, every safari is led by a local guide who was born in these villages and knows the desert like their own backyard."
         tours={CAMEL_TOURS}

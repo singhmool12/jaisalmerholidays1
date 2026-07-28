@@ -8,10 +8,10 @@ const PAGE_URL = blogUrl(post.slug);
 export const Route = createFileRoute("/blog/jaisalmer-local-food-guide")({
   head: () => ({
     meta: [
-      { title: `${post.title} — Jaisalmerholidays` },
-      { name: "description", content: post.description },
-      { property: "og:title", content: post.title },
-      { property: "og:description", content: post.description },
+      { title: post.metaTitle },
+      { name: "description", content: post.metaDescription },
+      { property: "og:title", content: post.metaTitle },
+      { property: "og:description", content: post.metaDescription },
       { property: "og:url", content: PAGE_URL },
       { property: "og:type", content: "article" },
       { property: "og:image", content: absoluteCover(post.cover) },

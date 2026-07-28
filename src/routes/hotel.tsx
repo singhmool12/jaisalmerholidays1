@@ -21,10 +21,10 @@ import { telLink, tourWaLink } from "@/lib/brand";
 export const Route = createFileRoute("/hotel")({
   head: () => ({
     meta: [
-      { title: "Heritage Hotel in Jaisalmer | Jaisalmer Holidays" },
-      { name: "description", content: "Boutique heritage hotel with Super Deluxe King Rooms in the heart of Jaisalmer — comfortable stays for your Jaisalmer holidays." },
-      { property: "og:title", content: "Heritage Hotel in Jaisalmer | Jaisalmer Holidays" },
-      { property: "og:description", content: "Boutique heritage hotel with Super Deluxe King Rooms in the heart of Jaisalmer — comfortable stays for your Jaisalmer holidays." },
+      { title: "Hotels in Jaisalmer | Best Stays Near Fort & Dunes" },
+      { name: "description", content: "Find the best hotels in Jaisalmer: heritage havelis, desert camps, and budget stays near Jaisalmer Fort and Sam Sand Dunes. Book with local experts." },
+      { property: "og:title", content: "Hotels in Jaisalmer | Best Stays Near Fort & Dunes" },
+      { property: "og:description", content: "Find the best hotels in Jaisalmer: heritage havelis, desert camps, and budget stays near Jaisalmer Fort and Sam Sand Dunes. Book with local experts." },
       { property: "og:url", content: "https://www.jaisalmerholidays.com/hotel" },
     ],
     links: [{ rel: "canonical", href: "https://www.jaisalmerholidays.com/hotel" }],
@@ -114,7 +114,7 @@ function Hotel() {
     <div className="min-h-screen bg-[var(--cream)] grain-bg" id="top">
       <Nav />
       <BackButton />
-      <PageHero image={hero} kicker="Boutique stay" title="Our Hotel in Jaisalmer" subtitle="A quiet heritage-style hotel a few minutes from the Golden Fort." />
+      <PageHero image={hero} kicker="Boutique stay" title="Best Hotels in Jaisalmer: Havelis, Camps & Budget Stays" subtitle="A quiet heritage-style hotel a few minutes from the Golden Fort." />
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-14 space-y-10">
         {ROOMS.map((r, idx) => (
           <motion.div
