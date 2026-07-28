@@ -34,7 +34,7 @@ function BlogIndex() {
     <div className="min-h-screen bg-[var(--cream)] grain-bg" id="top">
       <Nav />
       <BackButton />
-      <PageHero image={hero} kicker="Travel journal" title="Jaisalmer travel blog" subtitle="Guides, tips and stories from our team on the ground in the Thar." />
+      <PageHero image={hero} kicker="Travel journal" title="Jaisalmer Travel Blog: Local Guides & Travel Tips" subtitle="Guides, tips and stories from our team on the ground in the Thar." />
       <section className="max-w-5xl mx-auto px-6 py-14">
         <div className="grid sm:grid-cols-2 gap-6">
           {BLOG_POSTS.map((p) => (
