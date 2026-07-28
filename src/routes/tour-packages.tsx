@@ -120,7 +120,7 @@ function Page() {
       <PageHero
         image={hero}
         kicker="Ready-made itineraries"
-        title="Jaisalmer Tour Packages"
+        title="Best Jaisalmer Tour Packages for Every Budget"
         subtitle="Sample itineraries you can book as-is or mix and match. Every package is fully customisable."
       />
       <section className="max-w-5xl mx-auto px-6 py-14">
