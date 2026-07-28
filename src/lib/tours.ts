@@ -61,7 +61,7 @@ export const CAMEL_TOURS: Tour[] = [
       "Perfect for early risers who want to catch the desert waking up.",
       "Pickup from your Jaisalmer hotel before dawn, jeep ride to the starting point.",
       "1.5 to 2 hours on camelback into the quieter dunes.",
-      "Best hot breakfast cooked over an open fire on the sand — chai, eggs, toast, seasonal fruit.",
+      "Best hot breakfast cooked over an open fire on the clean sand — chai, eggs, toast, seasonal fruit.",
       "Plenty of time to photograph the horizon turning gold.",
       "Back in the city by late morning with the whole day still free to explore.",
     ],
