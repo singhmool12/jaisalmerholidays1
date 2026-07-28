@@ -6,10 +6,10 @@ const hero = EVENTS[0].image;
 export const Route = createFileRoute("/special-events")({
   head: () => ({
     meta: [
-      { title: "Weddings & Special Events in Jaisalmer | Jaisalmer Holidays" },
-      { name: "description", content: "Desert weddings, private dinners and corporate retreats in the dunes — celebrate in style on your Jaisalmer holidays." },
-      { property: "og:title", content: "Weddings & Special Events in Jaisalmer | Jaisalmer Holidays" },
-      { property: "og:description", content: "Desert weddings, private dinners and corporate retreats in the dunes — celebrate in style on your Jaisalmer holidays." },
+      { title: "Destination Weddings & Events in Jaisalmer" },
+      { name: "description", content: "Host unforgettable destination weddings, corporate events, and celebrations in Jaisalmer. Desert venues, luxury camps, and full event planning support." },
+      { property: "og:title", content: "Destination Weddings & Events in Jaisalmer" },
+      { property: "og:description", content: "Host unforgettable destination weddings, corporate events, and celebrations in Jaisalmer. Desert venues, luxury camps, and full event planning support." },
       { property: "og:url", content: "https://www.jaisalmerholidays.com/special-events" },
     ],
     links: [{ rel: "canonical", href: "https://www.jaisalmerholidays.com/special-events" }],
@@ -18,7 +18,7 @@ export const Route = createFileRoute("/special-events")({
     <ServicePage
       hero={hero}
       kicker="Celebrate in the dunes"
-      title="Special Events in Jaisalmer"
+      title="Destination Weddings & Special Events in Jaisalmer"
       subtitle="From private candlelight dinners to full-scale desert weddings and corporate retreats."
       intro="We handle the entire event — decor, catering, cultural performers, guest transfers and stays — so you just show up and enjoy."
       tours={EVENTS}

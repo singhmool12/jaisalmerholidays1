@@ -6,10 +6,10 @@ const hero = "https://jaisalmerholidays.lovable.app/__l5e/assets-v1/bbbcba69-6d0
 export const Route = createFileRoute("/taxi")({
   head: () => ({
     meta: [
-      { title: "Taxi & Car Rental in Jaisalmer | Jaisalmer Holidays" },
-      { name: "description", content: "Self-drive cars, sedans, SUVs and tempo travellers for Jaisalmer sightseeing and Rajasthan tours — reliable transport for your Jaisalmer holidays." },
-      { property: "og:title", content: "Taxi & Car Rental in Jaisalmer | Jaisalmer Holidays" },
-      { property: "og:description", content: "Self-drive cars, sedans, SUVs and tempo travellers for Jaisalmer sightseeing and Rajasthan tours — reliable transport for your Jaisalmer holidays." },
+      { title: "Jaisalmer Taxi Service | Airport & Local Transfers" },
+      { name: "description", content: "Reliable Jaisalmer taxi service for airport pickup, local sightseeing, outstation trips, and desert transfers. Book AC cabs with experienced drivers." },
+      { property: "og:title", content: "Jaisalmer Taxi Service | Airport & Local Transfers" },
+      { property: "og:description", content: "Reliable Jaisalmer taxi service for airport pickup, local sightseeing, outstation trips, and desert transfers. Book AC cabs with experienced drivers." },
       { property: "og:url", content: "https://www.jaisalmerholidays.com/taxi" },
     ],
     links: [{ rel: "canonical", href: "https://www.jaisalmerholidays.com/taxi" }],
@@ -18,7 +18,7 @@ export const Route = createFileRoute("/taxi")({
     <ServicePage
       hero={hero}
       kicker="Getting around"
-      title="Taxi & Car Rental"
+      title="Jaisalmer Taxi Service for Airport, Local & Outstation Trips"
       subtitle="Self-drive, sedans, SUVs, tempo travellers and luxury buses — for city sightseeing, airport transfers and full Rajasthan tours."
       intro="Every vehicle comes with a clean interior, an experienced local driver (unless self-drive) and transparent pricing on request. Call or WhatsApp us for the best rate for your route and dates."
       tours={TAXIS}

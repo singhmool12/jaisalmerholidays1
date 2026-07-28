@@ -9,9 +9,9 @@ export const Route = createFileRoute("/blog/sam-sand-dunes-guide")({
   head: () => ({
     meta: [
       { title: "Sam Sand Dunes: Everything You Need to Know | Jaisalmer Holidays" },
-      { name: "description", content: post.description },
-      { property: "og:title", content: post.title },
-      { property: "og:description", content: post.description },
+      { name: "description", content: post.metaDescription },
+      { property: "og:title", content: post.metaTitle },
+      { property: "og:description", content: post.metaDescription },
       { property: "og:url", content: PAGE_URL },
       { property: "og:type", content: "article" },
       { property: "og:image", content: absoluteCover(post.cover) },

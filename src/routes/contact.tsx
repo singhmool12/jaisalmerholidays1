@@ -8,10 +8,10 @@ const hero = "https://loremflickr.com/1600/900/desert,sunrise,jaisalmer?lock=130
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Us | Jaisalmer Holidays" },
-      { name: "description", content: "Reach Jaisalmer Holidays on +91 70145 78096 or email info@jaisalmerholidays.com — let's plan your trip." },
-      { property: "og:title", content: "Contact Us | Jaisalmer Holidays" },
-      { property: "og:description", content: "Reach Jaisalmer Holidays on +91 70145 78096 or email info@jaisalmerholidays.com — let's plan your trip." },
+      { title: "Contact Jaisalmer Holidays | WhatsApp & Phone Now" },
+      { name: "description", content: "Get in touch with Jaisalmer Holidays for tour bookings, desert safari, and travel queries. Call or WhatsApp us for a free Jaisalmer trip itinerary." },
+      { property: "og:title", content: "Contact Jaisalmer Holidays | WhatsApp & Phone Now" },
+      { property: "og:description", content: "Get in touch with Jaisalmer Holidays for tour bookings, desert safari, and travel queries. Call or WhatsApp us for a free Jaisalmer trip itinerary." },
       { property: "og:url", content: "https://www.jaisalmerholidays.com/contact" },
     ],
     links: [{ rel: "canonical", href: "https://www.jaisalmerholidays.com/contact" }],
@@ -20,7 +20,7 @@ export const Route = createFileRoute("/contact")({
     <div className="min-h-screen bg-[var(--cream)] grain-bg" id="top">
       <Nav />
       <BackButton />
-      <PageHero image={hero} kicker="We're here to help" title="Contact us" subtitle="Send us a message and we'll reply on WhatsApp within minutes." />
+      <PageHero image={hero} kicker="We're here to help" title="Contact Jaisalmer Holidays – Book Your Desert Trip Today" subtitle="Send us a message and we'll reply on WhatsApp within minutes." />
       <ContactSection />
       <Footer />
     </div>

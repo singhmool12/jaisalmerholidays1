@@ -6,10 +6,10 @@ const hero = SIGHTSEEING[0].image;
 export const Route = createFileRoute("/sightseeing")({
   head: () => ({
     meta: [
-      { title: "Jaisalmer Sightseeing Tours | Jaisalmer Holidays" },
-      { name: "description", content: "Explore Jaisalmer Fort, Patwon ki Haveli, Gadisar Lake, Kuldhara and Bada Bagh — the essential sightseeing stops on your Jaisalmer holidays." },
-      { property: "og:title", content: "Jaisalmer Sightseeing Tours | Jaisalmer Holidays" },
-      { property: "og:description", content: "Explore Jaisalmer Fort, Patwon ki Haveli, Gadisar Lake, Kuldhara and Bada Bagh — the essential sightseeing stops on your Jaisalmer holidays." },
+      { title: "Jaisalmer Sightseeing Tour | Fort, Havelis & Dunes" },
+      { name: "description", content: "Discover top Jaisalmer sightseeing places: Golden Fort, Patwon Ki Haveli, Gadisar Lake, Bada Bagh, and Sam Sand Dunes with expert local guides." },
+      { property: "og:title", content: "Jaisalmer Sightseeing Tour | Fort, Havelis & Dunes" },
+      { property: "og:description", content: "Discover top Jaisalmer sightseeing places: Golden Fort, Patwon Ki Haveli, Gadisar Lake, Bada Bagh, and Sam Sand Dunes with expert local guides." },
       { property: "og:url", content: "https://www.jaisalmerholidays.com/sightseeing" },
     ],
     links: [{ rel: "canonical", href: "https://www.jaisalmerholidays.com/sightseeing" }],
@@ -18,7 +18,7 @@ export const Route = createFileRoute("/sightseeing")({
     <ServicePage
       hero={hero}
       kicker="Seven ways to meet the Thar"
-      title="Sightseeing in Jaisalmer"
+      title="Jaisalmer Sightseeing Tour: Fort, Havelis & Desert"
       subtitle="Forts, havelis, lakes and the desert border — with local guides who actually know these places."
       intro="Every tour below can be booked on its own or combined into a half-day or full-day itinerary. Pickup and drop from your hotel is always included."
       tours={SIGHTSEEING}

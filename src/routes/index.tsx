@@ -40,17 +40,17 @@ export const Route = createFileRoute("/")({
   component: Home,
   head: () => ({
     meta: [
-      { title: "Jaisalmer Holidays — Desert Safari, Camps & Tours | Book Now" },
+      { title: "Jaisalmer Tour Packages | Desert Safari & Camp | Jaisalmer Holidays" },
       {
         name: "description",
         content:
-          "Plan your Jaisalmer holidays with camel safaris, desert camps and sightseeing tours by local guides since 2010. Real Thar Desert experiences in Sam & Khuri dunes. Book now.",
+          "Book the best Jaisalmer tour packages, desert safari, camel rides, and luxury camps with Jaisalmer Holidays. Trusted local travel agency since 2010.",
       },
-      { property: "og:title", content: "Jaisalmer Holidays — Desert Safari, Camps & Tours | Book Now" },
+      { property: "og:title", content: "Jaisalmer Tour Packages | Desert Safari & Camp | Jaisalmer Holidays" },
       {
         property: "og:description",
         content:
-          "Plan your Jaisalmer holidays with camel safaris, desert camps and sightseeing tours by local guides since 2010. Real Thar Desert experiences in Sam & Khuri dunes. Book now.",
+          "Book the best Jaisalmer tour packages, desert safari, camel rides, and luxury camps with Jaisalmer Holidays. Trusted local travel agency since 2010.",
       },
       { property: "og:url", content: SITE_URL + "/" },
       { property: "og:type", content: "website" },
@@ -256,11 +256,13 @@ function Home() {
             Welcome to the Thar
           </motion.p>
 
-          <motion.h1
+          <h1 className="sr-only">Jaisalmer Tour Packages &amp; Desert Safari with Jaisalmer Holidays</h1>
+          <motion.div
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.8, duration: 0.9 }}
+            aria-hidden="true"
             className="mt-5 font-display font-normal text-[#FBF4E6] text-[2.6rem] sm:text-6xl md:text-7xl lg:text-8xl leading-[1] tracking-tight max-w-full drop-shadow-[0_4px_30px_rgba(0,0,0,0.35)] flex flex-col items-center gap-1 lg:block lg:text-center">
             <span className="block lg:inline">Jaisalmer</span><span className="italic text-[#E8AB3E] block lg:inline">holidays</span>
-          </motion.h1>
+          </motion.div>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.1, duration: 0.8 }}

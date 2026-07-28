@@ -11,14 +11,14 @@ const hero = "https://loremflickr.com/1600/900/jaisalmer,desert,fort?lock=300";
 export const Route = createFileRoute("/blog/")({
   head: () => ({
     meta: [
-      { title: "Jaisalmer Travel Blog | Tips, Guides & Stories — Jaisalmerholidays" },
+      { title: "Jaisalmer Travel Blog | Tips, Guides & Itineraries" },
       {
         name: "description",
         content:
-          "Local guides to Jaisalmer — desert safaris, honeymoon itineraries, sightseeing, food, shopping and more. Written by our team on the ground since 2010.",
+          "Read expert Jaisalmer travel blog with city guides, tour tips, best places to visit, desert safari advice, and itinerary ideas from local travel experts.",
       },
-      { property: "og:title", content: "Jaisalmer Travel Blog — Jaisalmerholidays" },
-      { property: "og:description", content: "Local Jaisalmer travel guides, tips and stories from our team." },
+      { property: "og:title", content: "Jaisalmer Travel Blog | Tips, Guides & Itineraries" },
+      { property: "og:description", content: "Read expert Jaisalmer travel blog with city guides, tour tips, best places to visit, desert safari advice, and itinerary ideas from local travel experts." },
       { property: "og:url", content: PAGE_URL },
       { property: "og:type", content: "website" },
       { property: "og:image", content: hero },
