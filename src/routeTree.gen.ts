@@ -14,7 +14,12 @@ import { Route as TaxiRouteImport } from './routes/taxi'
 import { Route as SpecialEventsRouteImport } from './routes/special-events'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as SightseeingRouteImport } from './routes/sightseeing'
+import { Route as JaisalmerPackageFromMumbaiRouteImport } from './routes/jaisalmer-package-from-mumbai'
+import { Route as JaisalmerPackageFromJaipurRouteImport } from './routes/jaisalmer-package-from-jaipur'
+import { Route as JaisalmerPackageFromDelhiRouteImport } from './routes/jaisalmer-package-from-delhi'
+import { Route as JaisalmerPackageFromAhmedabadRouteImport } from './routes/jaisalmer-package-from-ahmedabad'
 import { Route as HotelRouteImport } from './routes/hotel'
+import { Route as FamilyTourPackagesRouteImport } from './routes/family-tour-packages'
 import { Route as ExoticToursRouteImport } from './routes/exotic-tours'
 import { Route as DesertCampRouteImport } from './routes/desert-camp'
 import { Route as ContactRouteImport } from './routes/contact'
@@ -58,9 +63,38 @@ const SightseeingRoute = SightseeingRouteImport.update({
   path: '/sightseeing',
   getParentRoute: () => rootRouteImport,
 } as any)
+const JaisalmerPackageFromMumbaiRoute =
+  JaisalmerPackageFromMumbaiRouteImport.update({
+    id: '/jaisalmer-package-from-mumbai',
+    path: '/jaisalmer-package-from-mumbai',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const JaisalmerPackageFromJaipurRoute =
+  JaisalmerPackageFromJaipurRouteImport.update({
+    id: '/jaisalmer-package-from-jaipur',
+    path: '/jaisalmer-package-from-jaipur',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const JaisalmerPackageFromDelhiRoute =
+  JaisalmerPackageFromDelhiRouteImport.update({
+    id: '/jaisalmer-package-from-delhi',
+    path: '/jaisalmer-package-from-delhi',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const JaisalmerPackageFromAhmedabadRoute =
+  JaisalmerPackageFromAhmedabadRouteImport.update({
+    id: '/jaisalmer-package-from-ahmedabad',
+    path: '/jaisalmer-package-from-ahmedabad',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const HotelRoute = HotelRouteImport.update({
   id: '/hotel',
   path: '/hotel',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FamilyTourPackagesRoute = FamilyTourPackagesRouteImport.update({
+  id: '/family-tour-packages',
+  path: '/family-tour-packages',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ExoticToursRoute = ExoticToursRouteImport.update({
@@ -162,7 +196,12 @@ export interface FileRoutesByFullPath {
   '/contact': typeof ContactRoute
   '/desert-camp': typeof DesertCampRoute
   '/exotic-tours': typeof ExoticToursRoute
+  '/family-tour-packages': typeof FamilyTourPackagesRoute
   '/hotel': typeof HotelRoute
+  '/jaisalmer-package-from-ahmedabad': typeof JaisalmerPackageFromAhmedabadRoute
+  '/jaisalmer-package-from-delhi': typeof JaisalmerPackageFromDelhiRoute
+  '/jaisalmer-package-from-jaipur': typeof JaisalmerPackageFromJaipurRoute
+  '/jaisalmer-package-from-mumbai': typeof JaisalmerPackageFromMumbaiRoute
   '/sightseeing': typeof SightseeingRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/special-events': typeof SpecialEventsRoute
@@ -187,7 +226,12 @@ export interface FileRoutesByTo {
   '/contact': typeof ContactRoute
   '/desert-camp': typeof DesertCampRoute
   '/exotic-tours': typeof ExoticToursRoute
+  '/family-tour-packages': typeof FamilyTourPackagesRoute
   '/hotel': typeof HotelRoute
+  '/jaisalmer-package-from-ahmedabad': typeof JaisalmerPackageFromAhmedabadRoute
+  '/jaisalmer-package-from-delhi': typeof JaisalmerPackageFromDelhiRoute
+  '/jaisalmer-package-from-jaipur': typeof JaisalmerPackageFromJaipurRoute
+  '/jaisalmer-package-from-mumbai': typeof JaisalmerPackageFromMumbaiRoute
   '/sightseeing': typeof SightseeingRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/special-events': typeof SpecialEventsRoute
@@ -213,7 +257,12 @@ export interface FileRoutesById {
   '/contact': typeof ContactRoute
   '/desert-camp': typeof DesertCampRoute
   '/exotic-tours': typeof ExoticToursRoute
+  '/family-tour-packages': typeof FamilyTourPackagesRoute
   '/hotel': typeof HotelRoute
+  '/jaisalmer-package-from-ahmedabad': typeof JaisalmerPackageFromAhmedabadRoute
+  '/jaisalmer-package-from-delhi': typeof JaisalmerPackageFromDelhiRoute
+  '/jaisalmer-package-from-jaipur': typeof JaisalmerPackageFromJaipurRoute
+  '/jaisalmer-package-from-mumbai': typeof JaisalmerPackageFromMumbaiRoute
   '/sightseeing': typeof SightseeingRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/special-events': typeof SpecialEventsRoute
@@ -240,7 +289,12 @@ export interface FileRouteTypes {
     | '/contact'
     | '/desert-camp'
     | '/exotic-tours'
+    | '/family-tour-packages'
     | '/hotel'
+    | '/jaisalmer-package-from-ahmedabad'
+    | '/jaisalmer-package-from-delhi'
+    | '/jaisalmer-package-from-jaipur'
+    | '/jaisalmer-package-from-mumbai'
     | '/sightseeing'
     | '/sitemap.xml'
     | '/special-events'
@@ -265,7 +319,12 @@ export interface FileRouteTypes {
     | '/contact'
     | '/desert-camp'
     | '/exotic-tours'
+    | '/family-tour-packages'
     | '/hotel'
+    | '/jaisalmer-package-from-ahmedabad'
+    | '/jaisalmer-package-from-delhi'
+    | '/jaisalmer-package-from-jaipur'
+    | '/jaisalmer-package-from-mumbai'
     | '/sightseeing'
     | '/sitemap.xml'
     | '/special-events'
@@ -290,7 +349,12 @@ export interface FileRouteTypes {
     | '/contact'
     | '/desert-camp'
     | '/exotic-tours'
+    | '/family-tour-packages'
     | '/hotel'
+    | '/jaisalmer-package-from-ahmedabad'
+    | '/jaisalmer-package-from-delhi'
+    | '/jaisalmer-package-from-jaipur'
+    | '/jaisalmer-package-from-mumbai'
     | '/sightseeing'
     | '/sitemap.xml'
     | '/special-events'
@@ -316,7 +380,12 @@ export interface RootRouteChildren {
   ContactRoute: typeof ContactRoute
   DesertCampRoute: typeof DesertCampRoute
   ExoticToursRoute: typeof ExoticToursRoute
+  FamilyTourPackagesRoute: typeof FamilyTourPackagesRoute
   HotelRoute: typeof HotelRoute
+  JaisalmerPackageFromAhmedabadRoute: typeof JaisalmerPackageFromAhmedabadRoute
+  JaisalmerPackageFromDelhiRoute: typeof JaisalmerPackageFromDelhiRoute
+  JaisalmerPackageFromJaipurRoute: typeof JaisalmerPackageFromJaipurRoute
+  JaisalmerPackageFromMumbaiRoute: typeof JaisalmerPackageFromMumbaiRoute
   SightseeingRoute: typeof SightseeingRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   SpecialEventsRoute: typeof SpecialEventsRoute
@@ -372,11 +441,46 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SightseeingRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/jaisalmer-package-from-mumbai': {
+      id: '/jaisalmer-package-from-mumbai'
+      path: '/jaisalmer-package-from-mumbai'
+      fullPath: '/jaisalmer-package-from-mumbai'
+      preLoaderRoute: typeof JaisalmerPackageFromMumbaiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/jaisalmer-package-from-jaipur': {
+      id: '/jaisalmer-package-from-jaipur'
+      path: '/jaisalmer-package-from-jaipur'
+      fullPath: '/jaisalmer-package-from-jaipur'
+      preLoaderRoute: typeof JaisalmerPackageFromJaipurRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/jaisalmer-package-from-delhi': {
+      id: '/jaisalmer-package-from-delhi'
+      path: '/jaisalmer-package-from-delhi'
+      fullPath: '/jaisalmer-package-from-delhi'
+      preLoaderRoute: typeof JaisalmerPackageFromDelhiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/jaisalmer-package-from-ahmedabad': {
+      id: '/jaisalmer-package-from-ahmedabad'
+      path: '/jaisalmer-package-from-ahmedabad'
+      fullPath: '/jaisalmer-package-from-ahmedabad'
+      preLoaderRoute: typeof JaisalmerPackageFromAhmedabadRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/hotel': {
       id: '/hotel'
       path: '/hotel'
       fullPath: '/hotel'
       preLoaderRoute: typeof HotelRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/family-tour-packages': {
+      id: '/family-tour-packages'
+      path: '/family-tour-packages'
+      fullPath: '/family-tour-packages'
+      preLoaderRoute: typeof FamilyTourPackagesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/exotic-tours': {
@@ -508,7 +612,12 @@ const rootRouteChildren: RootRouteChildren = {
   ContactRoute: ContactRoute,
   DesertCampRoute: DesertCampRoute,
   ExoticToursRoute: ExoticToursRoute,
+  FamilyTourPackagesRoute: FamilyTourPackagesRoute,
   HotelRoute: HotelRoute,
+  JaisalmerPackageFromAhmedabadRoute: JaisalmerPackageFromAhmedabadRoute,
+  JaisalmerPackageFromDelhiRoute: JaisalmerPackageFromDelhiRoute,
+  JaisalmerPackageFromJaipurRoute: JaisalmerPackageFromJaipurRoute,
+  JaisalmerPackageFromMumbaiRoute: JaisalmerPackageFromMumbaiRoute,
   SightseeingRoute: SightseeingRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   SpecialEventsRoute: SpecialEventsRoute,

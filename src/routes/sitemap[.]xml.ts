@@ -13,6 +13,11 @@ interface SitemapEntry {
 const entries: SitemapEntry[] = [
   { path: "/", changefreq: "weekly", priority: "1.0" },
   { path: "/tour-packages", changefreq: "weekly", priority: "0.9" },
+  { path: "/family-tour-packages", changefreq: "weekly", priority: "0.8" },
+  { path: "/jaisalmer-package-from-delhi", changefreq: "weekly", priority: "0.8" },
+  { path: "/jaisalmer-package-from-mumbai", changefreq: "weekly", priority: "0.8" },
+  { path: "/jaisalmer-package-from-jaipur", changefreq: "weekly", priority: "0.8" },
+  { path: "/jaisalmer-package-from-ahmedabad", changefreq: "weekly", priority: "0.8" },
   { path: "/camel-safari", changefreq: "weekly", priority: "0.9" },
   { path: "/desert-camp", changefreq: "weekly", priority: "0.9" },
   { path: "/sightseeing", changefreq: "weekly", priority: "0.8" },
