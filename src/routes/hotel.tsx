@@ -25,9 +25,9 @@ export const Route = createFileRoute("/hotel")({
       { name: "description", content: "Find the best hotels in Jaisalmer: heritage havelis, desert camps, and budget stays near Jaisalmer Fort and Sam Sand Dunes. Book with local experts." },
       { property: "og:title", content: "Hotels in Jaisalmer | Best Stays Near Fort & Dunes" },
       { property: "og:description", content: "Find the best hotels in Jaisalmer: heritage havelis, desert camps, and budget stays near Jaisalmer Fort and Sam Sand Dunes. Book with local experts." },
-      { property: "og:url", content: "https://www.jaisalmerholidays.com/hotel" },
+      { property: "og:url", content: "https://jaisalmerholidays.com/hotel" },
     ],
-    links: [{ rel: "canonical", href: "https://www.jaisalmerholidays.com/hotel" }],
+    links: [{ rel: "canonical", href: "https://jaisalmerholidays.com/hotel" }],
   }),
   component: Hotel,
 });

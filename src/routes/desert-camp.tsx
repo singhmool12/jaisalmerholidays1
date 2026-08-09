@@ -10,9 +10,9 @@ export const Route = createFileRoute("/desert-camp")({
       { name: "description", content: "Stay at the best luxury desert camp in Jaisalmer near Sam Sand Dunes. Enjoy Swiss tents, cultural programs, dinner under stars, and desert safari." },
       { property: "og:title", content: "Luxury Desert Camp Jaisalmer | Sam Sand Dunes Stay" },
       { property: "og:description", content: "Stay at the best luxury desert camp in Jaisalmer near Sam Sand Dunes. Enjoy Swiss tents, cultural programs, dinner under stars, and desert safari." },
-      { property: "og:url", content: "https://www.jaisalmerholidays.com/desert-camp" },
+      { property: "og:url", content: "https://jaisalmerholidays.com/desert-camp" },
     ],
-    links: [{ rel: "canonical", href: "https://www.jaisalmerholidays.com/desert-camp" }],
+    links: [{ rel: "canonical", href: "https://jaisalmerholidays.com/desert-camp" }],
   }),
   component: () => (
     <ServicePage

@@ -10,9 +10,9 @@ export const Route = createFileRoute("/sightseeing")({
       { name: "description", content: "Discover top Jaisalmer sightseeing places: Golden Fort, Patwon Ki Haveli, Gadisar Lake, Bada Bagh, and Sam Sand Dunes with expert local guides." },
       { property: "og:title", content: "Jaisalmer Sightseeing Tour | Fort, Havelis & Dunes" },
       { property: "og:description", content: "Discover top Jaisalmer sightseeing places: Golden Fort, Patwon Ki Haveli, Gadisar Lake, Bada Bagh, and Sam Sand Dunes with expert local guides." },
-      { property: "og:url", content: "https://www.jaisalmerholidays.com/sightseeing" },
+      { property: "og:url", content: "https://jaisalmerholidays.com/sightseeing" },
     ],
-    links: [{ rel: "canonical", href: "https://www.jaisalmerholidays.com/sightseeing" }],
+    links: [{ rel: "canonical", href: "https://jaisalmerholidays.com/sightseeing" }],
   }),
   component: () => (
     <ServicePage

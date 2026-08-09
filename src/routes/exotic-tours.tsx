@@ -10,9 +10,9 @@ export const Route = createFileRoute("/exotic-tours")({
       { name: "description", content: "Plan exotic Rajasthan tours from Jaisalmer to Jodhpur, Udaipur, Jaipur, and Bikaner. Customized heritage, desert, and palace tour packages." },
       { property: "og:title", content: "Exotic Rajasthan Tours | Jaisalmer & Beyond" },
       { property: "og:description", content: "Plan exotic Rajasthan tours from Jaisalmer to Jodhpur, Udaipur, Jaipur, and Bikaner. Customized heritage, desert, and palace tour packages." },
-      { property: "og:url", content: "https://www.jaisalmerholidays.com/exotic-tours" },
+      { property: "og:url", content: "https://jaisalmerholidays.com/exotic-tours" },
     ],
-    links: [{ rel: "canonical", href: "https://www.jaisalmerholidays.com/exotic-tours" }],
+    links: [{ rel: "canonical", href: "https://jaisalmerholidays.com/exotic-tours" }],
   }),
   component: () => (
     <ServicePage

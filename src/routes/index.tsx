@@ -11,7 +11,7 @@ import { CAMEL_TOURS, SIGHTSEEING, ADVENTURE, HOME_HERO, DESERT_CAMPS, EXOTIC, E
 const hero = HOME_HERO;
 
 
-const SITE_URL = "https://www.jaisalmerholidays.com";
+const SITE_URL = "https://jaisalmerholidays.com";
 
 const HOME_JSONLD = {
   "@context": "https://schema.org",
