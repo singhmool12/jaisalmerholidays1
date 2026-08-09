@@ -113,7 +113,7 @@ export const BLOG_POSTS: BlogSummary[] = [
   },
 ];
 
-export const SITE_URL = "https://www.jaisalmerholidays.com";
+export const SITE_URL = "https://jaisalmerholidays.com";
 export const blogUrl = (slug: string) => `${SITE_URL}/blog/${slug}`;
 // Absolute URL for a cover image (used in og:image / JSON-LD image fields).
 export const absoluteCover = (cover: string) => (cover.startsWith("http") ? cover : SITE_URL + cover);

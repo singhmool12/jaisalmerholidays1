@@ -10,9 +10,9 @@ export const Route = createFileRoute("/special-events")({
       { name: "description", content: "Host unforgettable destination weddings, corporate events, and celebrations in Jaisalmer. Desert venues, luxury camps, and full event planning support." },
       { property: "og:title", content: "Destination Weddings & Events in Jaisalmer" },
       { property: "og:description", content: "Host unforgettable destination weddings, corporate events, and celebrations in Jaisalmer. Desert venues, luxury camps, and full event planning support." },
-      { property: "og:url", content: "https://www.jaisalmerholidays.com/special-events" },
+      { property: "og:url", content: "https://jaisalmerholidays.com/special-events" },
     ],
-    links: [{ rel: "canonical", href: "https://www.jaisalmerholidays.com/special-events" }],
+    links: [{ rel: "canonical", href: "https://jaisalmerholidays.com/special-events" }],
   }),
   component: () => (
     <ServicePage

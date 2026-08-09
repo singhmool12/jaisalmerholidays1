@@ -1,4 +1,4 @@
-export const SITE_URL = "https://www.jaisalmerholidays.com";
+export const SITE_URL = "https://jaisalmerholidays.com";
 
 export const PHONE = "+91 70145 78096";
 

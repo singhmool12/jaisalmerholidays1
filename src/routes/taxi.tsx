@@ -10,9 +10,9 @@ export const Route = createFileRoute("/taxi")({
       { name: "description", content: "Reliable Jaisalmer taxi service for airport pickup, local sightseeing, outstation trips, and desert transfers. Book AC cabs with experienced drivers." },
       { property: "og:title", content: "Jaisalmer Taxi Service | Airport & Local Transfers" },
       { property: "og:description", content: "Reliable Jaisalmer taxi service for airport pickup, local sightseeing, outstation trips, and desert transfers. Book AC cabs with experienced drivers." },
-      { property: "og:url", content: "https://www.jaisalmerholidays.com/taxi" },
+      { property: "og:url", content: "https://jaisalmerholidays.com/taxi" },
     ],
-    links: [{ rel: "canonical", href: "https://www.jaisalmerholidays.com/taxi" }],
+    links: [{ rel: "canonical", href: "https://jaisalmerholidays.com/taxi" }],
   }),
   component: () => (
     <ServicePage

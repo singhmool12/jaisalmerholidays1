@@ -12,9 +12,9 @@ export const Route = createFileRoute("/contact")({
       { name: "description", content: "Get in touch with Jaisalmer Holidays for tour bookings, desert safari, and travel queries. Call or WhatsApp us for a free Jaisalmer trip itinerary." },
       { property: "og:title", content: "Contact Jaisalmer Holidays | WhatsApp & Phone Now" },
       { property: "og:description", content: "Get in touch with Jaisalmer Holidays for tour bookings, desert safari, and travel queries. Call or WhatsApp us for a free Jaisalmer trip itinerary." },
-      { property: "og:url", content: "https://www.jaisalmerholidays.com/contact" },
+      { property: "og:url", content: "https://jaisalmerholidays.com/contact" },
     ],
-    links: [{ rel: "canonical", href: "https://www.jaisalmerholidays.com/contact" }],
+    links: [{ rel: "canonical", href: "https://jaisalmerholidays.com/contact" }],
   }),
   component: () => (
     <div className="min-h-screen bg-[var(--cream)] grain-bg" id="top">

@@ -54,11 +54,11 @@ export function blogPostJsonLd(opts: {
     image: [opts.image],
     datePublished: opts.datePublished,
     dateModified: opts.dateModified ?? opts.datePublished,
-    author: { "@type": "Organization", name: "Jaisalmerholidays", url: "https://www.jaisalmerholidays.com" },
+    author: { "@type": "Organization", name: "Jaisalmerholidays", url: "https://jaisalmerholidays.com" },
     publisher: {
       "@type": "Organization",
       name: "Jaisalmerholidays",
-      logo: { "@type": "ImageObject", url: "https://www.jaisalmerholidays.com/favicon.ico" },
+      logo: { "@type": "ImageObject", url: "https://jaisalmerholidays.com/favicon.ico" },
     },
     mainEntityOfPage: { "@type": "WebPage", "@id": opts.url },
     url: opts.url,

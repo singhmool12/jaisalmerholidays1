@@ -4,7 +4,7 @@ import { FAQ, faqJsonLd, type FAQItem } from "@/components/site/FAQ";
 import { CAMEL_TOURS } from "@/lib/tours";
 
 const hero = CAMEL_TOURS[3].image;
-const SITE_URL = "https://www.jaisalmerholidays.com";
+const SITE_URL = "https://jaisalmerholidays.com";
 const PAGE_URL = SITE_URL + "/camel-safari";
 
 const FAQS: FAQItem[] = [

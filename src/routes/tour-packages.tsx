@@ -5,7 +5,7 @@ import { PageHero, CTABand } from "@/components/site/Sections";
 import { BackButton } from "@/components/site/BackButton";
 import { HOME_HERO } from "@/lib/tours";
 
-const SITE_URL = "https://www.jaisalmerholidays.com";
+const SITE_URL = "https://jaisalmerholidays.com";
 const PAGE_URL = SITE_URL + "/tour-packages";
 const hero = HOME_HERO;
 

@@ -10,9 +10,9 @@ export const Route = createFileRoute("/adventure")({
       { name: "description", content: "Thrilling adventure activities in Jaisalmer: jeep safari, dune bashing, quad biking, parasailing, and camel rides. Book your desert adventure today." },
       { property: "og:title", content: "Adventure Activities Jaisalmer | Jeep & Quad Safari" },
       { property: "og:description", content: "Thrilling adventure activities in Jaisalmer: jeep safari, dune bashing, quad biking, parasailing, and camel rides. Book your desert adventure today." },
-      { property: "og:url", content: "https://www.jaisalmerholidays.com/adventure" },
+      { property: "og:url", content: "https://jaisalmerholidays.com/adventure" },
     ],
-    links: [{ rel: "canonical", href: "https://www.jaisalmerholidays.com/adventure" }],
+    links: [{ rel: "canonical", href: "https://jaisalmerholidays.com/adventure" }],
   }),
   component: () => (
     <ServicePage
