@@ -114,6 +114,83 @@ function CamelSafariPage() {
         tours={CAMEL_TOURS}
       />
 
+      {/* Detailed description, pricing, duration, inclusions */}
+      <section className="max-w-5xl mx-auto px-6 py-12">
+        <h2 className="font-display text-3xl md:text-4xl font-bold text-[var(--maroon)]">
+          Camel Safari Packages, Prices &amp; Duration
+        </h2>
+        <p className="mt-4 text-[var(--ink)] leading-relaxed">
+          Every camel safari in Jaisalmer starts with a pickup from your hotel, guesthouse or the
+          Jaisalmer railway station, followed by a short jeep drive to the dune belt where our camels
+          wait. From there you ride across ridges of soft golden sand, stopping at desert wells,
+          shepherd trails and abandoned Paliwal villages that most tour operators never show you.
+          Prices below are per person and include the camel, a trained handler, guide, refreshments
+          and all listed meals. Children under five ride free with a parent, and groups of six or
+          more receive a discounted rate on request.
+        </p>
+        <ul className="mt-6 space-y-3 text-[var(--ink)] leading-relaxed list-disc pl-5">
+          <li>
+            <strong>Sunrise or sunset camel ride (1.5–2 hours) — from ₹1,200 per person.</strong>{" "}
+            A short ride into the dunes near Kanoi with masala chai, biscuits and time for photos as
+            the light changes. Ideal for families, first-time riders and travellers on a tight
+            schedule.
+          </li>
+          <li>
+            <strong>Half-day safari with village walk (4 hours) — from ₹1,800 per person.</strong>{" "}
+            Camel ride, a guided walk through a Thar Desert village, a stop at a working well and
+            snacks served in the sand.
+          </li>
+          <li>
+            <strong>Overnight desert camping safari (18 hours) — from ₹2,150 per person.</strong>{" "}
+            Evening ride into non-touristic dunes, bonfire, live Rajasthani folk music and dance, a
+            four-course dinner of dal, gatte ki sabzi, seasonal vegetables, chapati, rice and sweet,
+            cotton bedding under the open sky or a tent, sunrise chai, breakfast and the return
+            transfer.
+          </li>
+          <li>
+            <strong>Two-night dune expedition (2 nights / 3 days) — from ₹6,500 per person.</strong>{" "}
+            A longer route with two different camps, deeper desert crossings and all meals included.
+          </li>
+          <li>
+            <strong>Thar Desert expedition (4–8 days) — quoted on request.</strong> A guided
+            crossing between remote villages with a support jeep, cook, full camping gear and every
+            meal on the trail.
+          </li>
+        </ul>
+        <h3 className="font-display text-2xl font-semibold text-[var(--maroon)] mt-10">
+          What is included
+        </h3>
+        <p className="mt-3 text-[var(--ink)] leading-relaxed">
+          All safaris include hotel pickup and drop within Jaisalmer city, jeep transfer to the dune
+          starting point, a well-trained camel with an experienced local handler, an English- or
+          Hindi-speaking guide, drinking water, tea and snacks, all meals listed in your chosen
+          package, bedding or tent accommodation on overnight trips, and the cultural folk programme
+          where mentioned. Vegetarian, Jain and non-vegetarian meals are prepared fresh in the
+          desert if you tell us your preference at the time of booking.
+        </p>
+        <h3 className="font-display text-2xl font-semibold text-[var(--maroon)] mt-8">
+          What is not included
+        </h3>
+        <p className="mt-3 text-[var(--ink)] leading-relaxed">
+          Personal expenses, alcoholic drinks, monument entry tickets in Jaisalmer city, travel
+          insurance, tips for the camel handler and any transport to or from Jaisalmer are not part
+          of the safari price. Quad bikes, dune bashing and paramotoring at Sam Sand Dunes are
+          separate add-ons that we are happy to arrange alongside your ride.
+        </p>
+        <h3 className="font-display text-2xl font-semibold text-[var(--maroon)] mt-8">
+          Best time, booking and cancellation
+        </h3>
+        <p className="mt-3 text-[var(--ink)] leading-relaxed">
+          The comfortable season runs from October to March, when days are mild and nights are cold
+          and clear for stargazing. From April to August we operate early-morning and late-evening
+          rides only. Book at least three to five days ahead during the peak winter months; in
+          quieter months same-day bookings on WhatsApp are usually possible. Cancellations made more
+          than 48 hours before departure are fully refundable, and we reschedule free of charge in
+          the rare event of a sandstorm or unseasonal rain.
+        </p>
+      </section>
+
+
       {/* Why choose us */}
       <section className="max-w-5xl mx-auto px-6 py-12">
         <div className="text-center mb-8">
