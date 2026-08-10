@@ -106,10 +106,10 @@ export const Route = createFileRoute("/sightseeing")({
         { t: "Flexible timings", d: "Sunrise starts, sunset finishes, or a slow midday pace with long lunch breaks — we build the day around you." },
       ]}
       related={[
-        { title: "Camel Safari", description: "Ride into the Khuri and Sam dunes at sunrise or sunset.", to: "/camel-safari" },
-        { title: "Desert Camp", description: "Luxury and Swiss tents with folk music, bonfire and dinner.", to: "/desert-camp" },
-        { title: "Tour Packages", description: "Multi-day Jaisalmer itineraries with stays and transfers.", to: "/tour-packages" },
-        { title: "Shopping Guide", description: "Where to buy textiles, silver and handicrafts in Jaisalmer.", to: "/blog/jaisalmer-shopping-guide" },
+        { label: "Camel Safari", blurb: "Ride into the Khuri and Sam dunes at sunrise or sunset.", to: "/camel-safari" },
+        { label: "Desert Camp", blurb: "Luxury and Swiss tents with folk music, bonfire and dinner.", to: "/desert-camp" },
+        { label: "Tour Packages", blurb: "Multi-day Jaisalmer itineraries with stays and transfers.", to: "/tour-packages" },
+        { label: "Shopping Guide", blurb: "Where to buy textiles, silver and handicrafts in Jaisalmer.", to: "/blog/jaisalmer-shopping-guide" },
       ]}
       extra={
         <section className="max-w-3xl mx-auto px-6 py-12 prose-jh">
