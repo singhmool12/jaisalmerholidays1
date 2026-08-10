@@ -42,6 +42,23 @@ function Page() {
         Almost every heritage hotel and haveli inside and around the fort has a rooftop restaurant with a direct view of Jaisalmer Fort lit up at night. Order a Rajasthani thali, take your time, and watch the sandstone glow.
       </p>
 
+      <h2>Fine dining with a view</h2>
+      <p>
+        If you'd rather skip the sand and stick to the city, Jaisalmer has plenty of candlelit rooftop spots perfect for a special dinner. Think slow-cooked lal maas, good wine, and sandstone arches glowing under fairy lights. Local favourites include <strong>Pleasant Haveli Rooftop Restaurant</strong> (laid-back, fantastic fort views), <strong>Jaisal Italy</strong> (surprisingly authentic pasta) and <strong>Jaisal Treat</strong> (classic North Indian in a cheerful old mansion).
+      </p>
+      <p>
+        Most of these places are at their best after sunset. Book a table outside for the view, linger over dessert, and soak in the calm — this is Jaisalmer's version of fine dining, where the city lights and the fort silhouette do half the work. For something more private, see our <Link to="/special-events">candlelight dinner setups</Link>.
+      </p>
+
+      <h2>Night-time adventure activities in the desert</h2>
+      <p>
+        If a quiet walk under the stars isn't quite enough excitement, you're in luck — Jaisalmer's dunes come alive with adventure after dark. Several operators around the Sam Sand Dunes run nocturnal jeep safaris and <Link to="/adventure">dune bashing</Link>, where you climb into a 4×4 and tear across the sand with only your headlights lighting the way. It's fast, bumpy, a bit wild, and one of the most adrenaline-charged ways to experience the desert at night.
+      </p>
+      <p>
+        For something less turbocharged but equally magical, <Link to="/camel-safari">camel safaris</Link> head out for sunset and return under the moonlight, usually winding up with music around the campfire. Whether you prefer your dunes at the pace of a camel or the roar of a jeep, there's plenty after dark for the adventurous crowd.
+      </p>
+
+
       <h2>Cultural evenings and live music</h2>
       <p>
         Even outside the desert camps, folk troupes perform at heritage properties and cultural centres in the old city during the peak season (October–March). Ask your hotel — most can arrange or point you to a show that same evening.
