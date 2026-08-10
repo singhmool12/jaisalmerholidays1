@@ -64,11 +64,14 @@ export const Route = createFileRoute("/")({
 
 const WORDS = "Jaisalmerholidays".split("");
 
-/* ---------- Intro splash: cinematic reveal ---------- */
+/* ---------- Intro splash: cinematic reveal (first load only) ---------- */
+let introPlayed = false;
 function IntroSplash() {
   const [show, setShow] = useState(false);
   useEffect(() => {
     if (typeof window === "undefined") return;
+    if (introPlayed) return;
+    introPlayed = true;
     if (sessionStorage.getItem("jh_intro_seen")) return;
     setShow(true);
     sessionStorage.setItem("jh_intro_seen", "1");
