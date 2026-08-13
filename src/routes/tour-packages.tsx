@@ -88,7 +88,7 @@ const JSONLD = {
         "@type": "TravelAgency",
         name: "Jaisalmerholidays",
         url: SITE_URL,
-        telephone: "+91 70145 78096",
+        telephone: "+91 79767 21173",
       },
     },
   })),

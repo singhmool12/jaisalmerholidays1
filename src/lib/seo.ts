@@ -1,6 +1,6 @@
 export const SITE_URL = "https://jaisalmerholidays.com";
 
-export const PHONE = "+91 70145 78096";
+export const PHONE = "+91 79767 21173";
 
 export type Crumb = { name: string; path: string };
 
@@ -24,7 +24,7 @@ export const travelAgencyJsonLd = {
   image: `${SITE_URL}/favicon.ico`,
   "@id": SITE_URL,
   url: SITE_URL,
-  telephone: "+91-70145-78096",
+  telephone: "+91-79767-21173",
   priceRange: "₹₹",
   address: {
     "@type": "PostalAddress",
@@ -66,7 +66,7 @@ export function touristTripJsonLd(opts: {
       "@type": "TravelAgency",
       name: "Jaisalmer Holidays",
       url: SITE_URL,
-      telephone: "+91-70145-78096",
+      telephone: "+91-79767-21173",
     },
     ...(opts.price
       ? {
