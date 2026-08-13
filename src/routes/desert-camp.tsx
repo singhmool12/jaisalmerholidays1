@@ -22,6 +22,12 @@ export const Route = createFileRoute("/desert-camp")({
       subtitle="Swiss tents, cultural evenings and quiet sunrises on the dunes."
       intro="Our desert camps sit slightly away from the main tourist strip so you get proper silence and proper stars — with dinner, folk music, and a sunrise camel ride included."
       tours={DESERT_CAMPS}
+      related={[
+        { label: "Sam Sand Dunes Guide", blurb: "Everything to know before your night on the Sam dunes.", to: "/blog/sam-sand-dunes-guide" },
+        { label: "Candlelight Desert Dining", blurb: "Private dinner set up on the sand, just for two.", to: "/blog/candlelight-dinner-desert-dining" },
+        { label: "Camel Safari", blurb: "Sunrise and sunset rides into quieter dune belts.", to: "/camel-safari" },
+        { label: "Tour Packages", blurb: "Multi-day itineraries with camp stays and transfers.", to: "/tour-packages" },
+      ]}
     />
   ),
 });

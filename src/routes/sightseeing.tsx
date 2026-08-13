@@ -110,6 +110,9 @@ export const Route = createFileRoute("/sightseeing")({
         { label: "Desert Camp", blurb: "Luxury and Swiss tents with folk music, bonfire and dinner.", to: "/desert-camp" },
         { label: "Tour Packages", blurb: "Multi-day Jaisalmer itineraries with stays and transfers.", to: "/tour-packages" },
         { label: "Shopping Guide", blurb: "Where to buy textiles, silver and handicrafts in Jaisalmer.", to: "/blog/jaisalmer-shopping-guide" },
+        { label: "Lodurva Excursion Guide", blurb: "The Jain temples and ruins of the old Bhati capital.", to: "/blog/lodurva-excursion-guide" },
+        { label: "Jaisalmer War Museum", blurb: "Longewala history, tanks and the audio-visual gallery.", to: "/blog/jaisalmer-war-museum" },
+        { label: "Local Food Guide", blurb: "What to eat in Jaisalmer and where the locals go.", to: "/blog/jaisalmer-local-food-guide" },
       ]}
       extra={
         <section className="max-w-3xl mx-auto px-6 py-12 prose-jh">
