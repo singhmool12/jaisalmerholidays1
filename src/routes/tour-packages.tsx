@@ -4,6 +4,7 @@ import { Footer } from "@/components/site/Footer";
 import { PageHero, CTABand } from "@/components/site/Sections";
 import { BackButton } from "@/components/site/BackButton";
 import { HOME_HERO } from "@/lib/tours";
+import { PROVIDER } from "@/lib/seo";
 
 const SITE_URL = "https://jaisalmerholidays.com";
 const PAGE_URL = SITE_URL + "/tour-packages";
