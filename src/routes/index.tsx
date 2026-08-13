@@ -20,7 +20,7 @@ const HOME_JSONLD = {
   url: SITE_URL,
   logo: `${SITE_URL}/favicon.ico`,
   image: HOME_HERO,
-  telephone: "+91 70145 78096",
+  telephone: "+91 79767 21173",
   email: "info@jaisalmerholidays.com",
   priceRange: "₹₹",
   address: {
@@ -44,16 +44,15 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Explore the best Jaisalmer package, vacation & desert tour. Book affordable Jaisalmer budget tour, family tour and complete Jaisalmer trip packages for an unforgettable Rajasthan holiday.
+          "Explore the best Jaisalmer package, vacation & desert tour. Book affordable Jaisalmer budget, family and complete trip packages for an unforgettable Rajasthan holiday.",
       },
       { property: "og:title", content: "Jaisalmer Tour Packages | Desert Safari & Camp | Jaisalmer Holidays" },
       {
         property: "og:description",
         content:
-          "Explore the best Jaisalmer package, vacation & desert tour. Book affordable Jaisalmer budget tour, family tour and complete Jaisalmer trip packages for an unforgettable Rajasthan holiday.
-
-Alternative Title:.",
+          "Explore the best Jaisalmer package, vacation & desert tour. Book affordable Jaisalmer budget, family and complete trip packages for an unforgettable Rajasthan holiday.",
       },
+
       { property: "og:url", content: SITE_URL + "/" },
       { property: "og:type", content: "website" },
       { property: "og:image", content: HOME_HERO },

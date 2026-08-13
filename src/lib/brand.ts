@@ -1,9 +1,9 @@
 export const BRAND = {
   name: "Jaisalmerholidays",
   tagline: "Tours & travels in Jaisalmer — desert safaris, camps, sightseeing & more.",
-  phone: "+91 70145 78096",
-  phoneRaw: "+917014578096",
-  whatsapp: "917014578096",
+  phone: "+91 79767 21173",
+  phoneRaw: "+917976721173",
+  whatsapp: "917976721173",
   email: "info@jaisalmerholidays.com",
   address: "Jaisalmer, Rajasthan, India",
   since: "2010",

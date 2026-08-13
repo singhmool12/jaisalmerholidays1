@@ -1,6 +1,29 @@
+import { BRAND } from "@/lib/brand";
+
 export const SITE_URL = "https://jaisalmerholidays.com";
 
-export const PHONE = "+91 70145 78096";
+/** Single source of truth for the contact number (see src/lib/brand.ts). */
+export const PHONE = BRAND.phone;
+export const PHONE_INTL = "+91-79767-21173";
+export const WHATSAPP = BRAND.whatsapp;
+
+export const POSTAL_ADDRESS = {
+  "@type": "PostalAddress",
+  streetAddress: "Near Jaisalmer Fort",
+  addressLocality: "Jaisalmer",
+  addressRegion: "Rajasthan",
+  postalCode: "345001",
+  addressCountry: "IN",
+} as const;
+
+/** Provider block for TouristTrip / Product schema — always includes address. */
+export const PROVIDER = {
+  "@type": "TravelAgency",
+  name: "Jaisalmerholidays",
+  url: SITE_URL,
+  telephone: "+91-79767-21173",
+  address: POSTAL_ADDRESS,
+} as const;
 
 export type Crumb = { name: string; path: string };
 
@@ -24,16 +47,9 @@ export const travelAgencyJsonLd = {
   image: `${SITE_URL}/favicon.ico`,
   "@id": SITE_URL,
   url: SITE_URL,
-  telephone: "+91-70145-78096",
+  telephone: "+91-79767-21173",
   priceRange: "₹₹",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "Jaisalmer",
-    addressLocality: "Jaisalmer",
-    addressRegion: "Rajasthan",
-    postalCode: "345001",
-    addressCountry: "IN",
-  },
+  address: POSTAL_ADDRESS,
   geo: {
     "@type": "GeoCoordinates",
     latitude: 26.9157,
@@ -62,12 +78,7 @@ export function touristTripJsonLd(opts: {
     description: opts.description,
     url: opts.url,
     image: opts.image,
-    provider: {
-      "@type": "TravelAgency",
-      name: "Jaisalmer Holidays",
-      url: SITE_URL,
-      telephone: "+91-70145-78096",
-    },
+    provider: PROVIDER,
     ...(opts.price
       ? {
           offers: {

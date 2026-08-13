@@ -4,6 +4,7 @@ import { Footer } from "@/components/site/Footer";
 import { PageHero, CTABand } from "@/components/site/Sections";
 import { BackButton } from "@/components/site/BackButton";
 import { HOME_HERO } from "@/lib/tours";
+import { PROVIDER } from "@/lib/seo";
 
 const SITE_URL = "https://jaisalmerholidays.com";
 const PAGE_URL = SITE_URL + "/tour-packages";
@@ -84,12 +85,7 @@ const JSONLD = {
       "@type": "TouristTrip",
       name: p.title,
       description: p.tagline,
-      provider: {
-        "@type": "TravelAgency",
-        name: "Jaisalmerholidays",
-        url: SITE_URL,
-        telephone: "+91 70145 78096",
-      },
+      provider: PROVIDER,
     },
   })),
 };
@@ -130,6 +126,8 @@ function Page() {
           {" "}<Link to="/camel-safari" className="text-[var(--terracotta)] font-semibold hover:underline">camel safaris</Link>,
           {" "}<Link to="/sightseeing" className="text-[var(--terracotta)] font-semibold hover:underline">sightseeing tours</Link> and
           our <Link to="/hotel" className="text-[var(--terracotta)] font-semibold hover:underline">heritage hotel</Link>. We'll tailor dates, group size and inclusions to you.
+          {" "}Planning a romantic trip? Read our <Link to={"/blog/jaisalmer-honeymoon-couples-guide" as "/blog"} className="text-[var(--terracotta)] font-semibold hover:underline">Jaisalmer honeymoon and couples guide</Link> and
+          {" "}the <Link to={"/blog/candlelight-dinner-desert-dining" as "/blog"} className="text-[var(--terracotta)] font-semibold hover:underline">candlelight dinner in the desert</Link> guide before you pick a package.
         </p>
 
         <div className="grid md:grid-cols-2 gap-6 mt-10">

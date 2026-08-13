@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ServicePage } from "@/components/site/ServicePage";
 import { FAQ, faqJsonLd, type FAQItem } from "@/components/site/FAQ";
 import { CAMEL_TOURS } from "@/lib/tours";
+import { PROVIDER } from "@/lib/seo";
 
 const hero = CAMEL_TOURS[3].image;
 const SITE_URL = "https://jaisalmerholidays.com";
@@ -51,12 +52,7 @@ const TRIP_JSONLD = {
   touristType: ["Adventure", "Family", "Couples", "Photographers"],
   url: PAGE_URL,
   image: hero,
-  provider: {
-    "@type": "TravelAgency",
-    name: "Jaisalmerholidays",
-    url: SITE_URL,
-    telephone: "+91 70145 78096",
-  },
+  provider: PROVIDER,
   offers: {
     "@type": "Offer",
     priceCurrency: "INR",
