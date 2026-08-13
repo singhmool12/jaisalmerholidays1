@@ -84,12 +84,7 @@ const JSONLD = {
       "@type": "TouristTrip",
       name: p.title,
       description: p.tagline,
-      provider: {
-        "@type": "TravelAgency",
-        name: "Jaisalmerholidays",
-        url: SITE_URL,
-        telephone: "+91 79767 21173",
-      },
+      provider: PROVIDER,
     },
   })),
 };
