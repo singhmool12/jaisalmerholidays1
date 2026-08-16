@@ -52,20 +52,22 @@ const TRIP_JSONLD = {
   touristType: ["Adventure", "Family", "Couples", "Photographers"],
   url: PAGE_URL,
   image: hero,
-  provider: PROVIDER,
+  provider: {
+    ...PROVIDER,
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: 4.9,
+      reviewCount: 412,
+      bestRating: 5,
+      worstRating: 1,
+    },
+  },
   offers: {
     "@type": "Offer",
     priceCurrency: "INR",
     price: "2150",
     availability: "https://schema.org/InStock",
     url: PAGE_URL,
-  },
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: 4.9,
-    reviewCount: 412,
-    bestRating: 5,
-    worstRating: 1,
   },
 };
 
