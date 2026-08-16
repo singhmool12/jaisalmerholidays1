@@ -23,6 +23,8 @@ export const PROVIDER = {
   url: SITE_URL,
   telephone: "+91-79767-21173",
   address: POSTAL_ADDRESS,
+  image: `${SITE_URL}/favicon.png`,
+  priceRange: "₹1500 - ₹8000",
 } as const;
 
 export type Crumb = { name: string; path: string };
