@@ -77,7 +77,7 @@ function Page() {
       </ul>
 
       <p>
-        Ready to swap a night out for a night in the dunes? See our <Link to="/desert-camp">desert camp options</Link>.
+        Ready to swap a night out for a night in the dunes? See our <Link to="/desert-camp">desert camp options</Link>, browse <Link to="/exotic-tours">exotic private experiences in the Thar</Link>, or arrange late-night transfers with our <Link to="/taxi">Jaisalmer taxi service</Link>.
       </p>
     </BlogPost>
   );
