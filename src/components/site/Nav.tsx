@@ -8,8 +8,9 @@ import logo from "@/assets/logo.png";
 const NAV = [
   { label: "Home", to: "/" },
   { label: "Tour Packages", to: "/tour-packages" },
+  { label: "Exotic Tours", to: "/exotic-tours" },
+  { label: "Taxi", to: "/taxi" },
   { label: "Hotel", to: "/hotel" },
-  { label: "Events", to: "/special-events" },
   { label: "Blog", to: "/blog" },
   { label: "Contact", to: "/contact" },
 ] as const;

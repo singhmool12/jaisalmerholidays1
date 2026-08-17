@@ -24,6 +24,7 @@ export function Footer() {
           <Link to="/tour-packages" className="opacity-80 hover:opacity-100">Tour Packages</Link>
           <Link to="/sightseeing" className="opacity-80 hover:opacity-100">Sightseeing</Link>
           <Link to="/exotic-tours" className="opacity-80 hover:opacity-100">Exotic Tours</Link>
+          <Link to="/taxi" className="opacity-80 hover:opacity-100">Jaisalmer Taxi Service</Link>
           <Link to="/hotel" className="opacity-80 hover:opacity-100">Hotel</Link>
         </div>
         <div className="flex flex-col gap-2">

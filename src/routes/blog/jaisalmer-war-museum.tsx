@@ -49,7 +49,7 @@ function Page() {
 
       <h2>Pairing it with the rest of your trip</h2>
       <p>
-        The War Museum pairs naturally with a Longewala border day-trip for anyone with a serious interest in military history — you can see the museum first, then drive out to the actual battlefield. It also slots easily into a wider <Link to="/sightseeing">Jaisalmer sightseeing itinerary</Link> alongside the fort and Bada Bagh.
+        The War Museum pairs naturally with a Longewala border day-trip for anyone with a serious interest in military history — you can see the museum first, then drive out to the actual battlefield. It also slots easily into a wider <Link to="/sightseeing">Jaisalmer sightseeing itinerary</Link> alongside the fort and Bada Bagh. For the Longewala run, book a private cab through our <Link to="/taxi">Jaisalmer taxi service</Link>, or add a <Link to="/exotic-tours">private desert experience</Link> such as stargazing on the way back.
       </p>
 
       <h2>Good to know</h2>
