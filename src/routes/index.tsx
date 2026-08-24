@@ -40,17 +40,17 @@ export const Route = createFileRoute("/")({
   component: Home,
   head: () => ({
     meta: [
-      { title: "Jaisalmer Tour Packages & Desert Safari | Jaisalmer Holidays" },
+      { title: "Jaisalmer Tour Packages | Desert Tour, Budget & Family Packages" },
       {
         name: "description",
         content:
-          "Book Jaisalmer tour packages, desert safari, camel rides and desert camps. Explore Jaisalmer Fort, Sam Sand Dunes and the Thar Desert with local travel experts.",
+          "Book the best Jaisalmer tour packages with desert safari, sightseeing, camel rides and customized itineraries. Explore budget tours, family packages and unforgettable Jaisalmer vacations.",
       },
       { property: "og:title", content: "Jaisalmer Tour Packages | Desert Safari & Camp | Jaisalmer Holidays" },
       {
         property: "og:description",
         content:
-          "Book Jaisalmer tour packages, desert safari, camel rides and desert camps. Explore Jaisalmer Fort, Sam Sand Dunes and the Thar Desert with local travel experts.",
+          "Book the best Jaisalmer tour packages with desert safari, sightseeing, camel rides and customized itineraries. Explore budget tours, family packages and unforgettable Jaisalmer vacations.",
       },
 
       { property: "og:url", content: SITE_URL + "/" },
