@@ -46,7 +46,7 @@ export const Route = createFileRoute("/")({
         content:
           "Book the best Jaisalmer tour packages with desert safari, sightseeing, camel rides and customized itineraries. Explore budget tours, family packages and unforgettable Jaisalmer vacations.",
       },
-      { property: "og:title", content: "Jaisalmer Tour Packages | Desert Safari & Camp | Jaisalmer Holidays" },
+      { property: "og:title", content: "Jaisalmer Tour Packages | Desert Tour, Budget & Family Packages" },
       {
         property: "og:description",
         content:
