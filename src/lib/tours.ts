@@ -460,6 +460,15 @@ export const EXOTIC: Tour[] = [
       "Photogenic setting with sandstone rocks and open sky.",
       "Perfect add-on for a Longewala or Tanot day trip.",
     ] },
+  { title: "Wildlife Safari in the Thar Desert", image: IMG.wildlifeSafari, noBooking: true,
+    paragraphs: [
+      "Spot the desert fox and its young in their natural habitat.",
+      "Track chinkara (Indian gazelle) grazing across the open scrubland.",
+      "Watch for the elusive desert cat and desert fox at dusk.",
+      "Look out for the critically endangered Great Indian Bustard.",
+      "Birdwatching for eagles, falcons, kestrels and winter migrants.",
+      "Jeep safari through dunes, rocky outcrops and salt flats with a local naturalist guide.",
+    ] },
 
 ];
 
