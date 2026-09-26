@@ -4,7 +4,7 @@ export const SITE_URL = "https://jaisalmerholidays.com";
 
 /** Single source of truth for the contact number (see src/lib/brand.ts). */
 export const PHONE = BRAND.phone;
-export const PHONE_INTL = "+91-79767-21173";
+export const PHONE_INTL = BRAND.phoneRaw;
 export const WHATSAPP = BRAND.whatsapp;
 
 export const POSTAL_ADDRESS = {
@@ -21,7 +21,7 @@ export const PROVIDER = {
   "@type": "TravelAgency",
   name: "Jaisalmerholidays",
   url: SITE_URL,
-  telephone: "+91-79767-21173",
+  telephone: BRAND.phoneRaw,
   address: POSTAL_ADDRESS,
   image: `${SITE_URL}/favicon.png`,
   priceRange: "₹1500 - ₹8000",
@@ -49,7 +49,7 @@ export const travelAgencyJsonLd = {
   image: `${SITE_URL}/favicon.ico`,
   "@id": SITE_URL,
   url: SITE_URL,
-  telephone: "+91-79767-21173",
+  telephone: BRAND.phoneRaw,
   priceRange: "₹₹",
   address: POSTAL_ADDRESS,
   geo: {
