@@ -40,7 +40,7 @@ const IMG = {
   tempo: A("82bc256f-32bf-4a59-8eb2-31bde14bec24", "tempo.avif"),
   sedan: A("c5747f02-abb4-40fd-9ab1-802975f410f0", "sedan.avif"),
   homeHero: A("72997d79-fb8f-4c0a-9106-616c67494be1", "home-hero.jpg"),
-  wildlifeSafari: A("008164d8-b0aa-4d36-86a9-75d5301f89a8", "wildlife-safari.jpg"),
+  wildlifeSafari: "/__l5e/assets-v1/008164d8-b0aa-4d36-86a9-75d5301f89a8/wildlife-safari.jpg",
 };
 
 export const HOME_HERO = IMG.homeHero;
