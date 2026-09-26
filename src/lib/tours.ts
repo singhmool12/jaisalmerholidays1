@@ -414,7 +414,7 @@ export const EXOTIC: Tour[] = [
       "Ideal for couples, proposals, anniversaries and photographers.",
       "Full privacy — your own spot in the desert.",
     ] },
-  { title: "Stargazing in the Thar Desert", price: "Night Experience • from ₹2,999 per person", image: IMG.stargazing,
+  { title: "Stargazing in the Thar Desert", image: IMG.stargazing, noBooking: true,
     paragraphs: [
       "Experience one of India's clearest night skies.",
       "Far away from city lights and light pollution.",
@@ -423,7 +423,7 @@ export const EXOTIC: Tour[] = [
       "Milky Way visible on clear nights.",
       "Best booked around new moon dates for the darkest sky.",
     ] },
-  { title: "Royal Candlelight Dinner in the Desert", price: "Private Dining • from ₹4,999 per couple", image: IMG.royalCandle,
+  { title: "Royal Candlelight Dinner in the Desert", image: IMG.royalCandle, noBooking: true,
     paragraphs: [
       "A beautifully decorated private setup in the dunes.",
       "Candlelight, flowers and traditional lanterns.",
