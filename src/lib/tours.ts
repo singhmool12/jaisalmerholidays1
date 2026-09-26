@@ -40,6 +40,7 @@ const IMG = {
   tempo: A("82bc256f-32bf-4a59-8eb2-31bde14bec24", "tempo.avif"),
   sedan: A("c5747f02-abb4-40fd-9ab1-802975f410f0", "sedan.avif"),
   homeHero: A("72997d79-fb8f-4c0a-9106-616c67494be1", "home-hero.jpg"),
+  wildlifeSafari: A("008164d8-b0aa-4d36-86a9-75d5301f89a8", "wildlife-safari.jpg"),
 };
 
 export const HOME_HERO = IMG.homeHero;
@@ -53,6 +54,7 @@ export type Tour = {
   image: string;
   paragraphs: string[];
   note?: string;
+  noBooking?: boolean;
 };
 
 export const CAMEL_TOURS: Tour[] = [
@@ -412,7 +414,7 @@ export const EXOTIC: Tour[] = [
       "Ideal for couples, proposals, anniversaries and photographers.",
       "Full privacy — your own spot in the desert.",
     ] },
-  { title: "Stargazing in the Thar Desert", price: "Night Experience • from ₹2,999 per person", image: IMG.stargazing,
+  { title: "Stargazing in the Thar Desert", image: IMG.stargazing, noBooking: true,
     paragraphs: [
       "Experience one of India's clearest night skies.",
       "Far away from city lights and light pollution.",
@@ -421,7 +423,7 @@ export const EXOTIC: Tour[] = [
       "Milky Way visible on clear nights.",
       "Best booked around new moon dates for the darkest sky.",
     ] },
-  { title: "Royal Candlelight Dinner in the Desert", price: "Private Dining • from ₹4,999 per couple", image: IMG.royalCandle,
+  { title: "Royal Candlelight Dinner in the Desert", image: IMG.royalCandle, noBooking: true,
     paragraphs: [
       "A beautifully decorated private setup in the dunes.",
       "Candlelight, flowers and traditional lanterns.",
@@ -457,6 +459,15 @@ export const EXOTIC: Tour[] = [
       "Guided walk explaining the Jurassic-era history of the region.",
       "Photogenic setting with sandstone rocks and open sky.",
       "Perfect add-on for a Longewala or Tanot day trip.",
+    ] },
+  { title: "Wildlife Safari in the Thar Desert", image: IMG.wildlifeSafari, noBooking: true,
+    paragraphs: [
+      "Spot the desert fox and its young in their natural habitat.",
+      "Track chinkara (Indian gazelle) grazing across the open scrubland.",
+      "Watch for the elusive desert cat and desert fox at dusk.",
+      "Look out for the critically endangered Great Indian Bustard.",
+      "Birdwatching for eagles, falcons, kestrels and winter migrants.",
+      "Jeep safari through dunes, rocky outcrops and salt flats with a local naturalist guide.",
     ] },
 
 ];
