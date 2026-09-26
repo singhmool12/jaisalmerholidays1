@@ -20,7 +20,7 @@ const HOME_JSONLD = {
   url: SITE_URL,
   logo: `${SITE_URL}/favicon.ico`,
   image: HOME_HERO,
-  telephone: "+91 79767 21173",
+  telephone: BRAND.phoneRaw,
   email: "info@jaisalmerholidays.com",
   priceRange: "₹₹",
   address: {
