@@ -52,7 +52,7 @@ export function TourBlock({ tour, index, showBooking = true }: { tour: Tour; ind
         <p className="text-sm italic text-[var(--ink)]/70 mt-1">{tour.note}</p>
       )}
       <div className="flex flex-wrap gap-3 mt-6">
-        {showBooking && (
+        {showBooking && !tour.noBooking && (
           <button
             type="button"
             onClick={() => setBookingOpen(true)}
@@ -69,7 +69,7 @@ export function TourBlock({ tour, index, showBooking = true }: { tour: Tour; ind
           <Phone size={16} /> Call Now
         </a>
       </div>
-      {showBooking && (
+      {showBooking && !tour.noBooking && (
         <BookingModal
           open={bookingOpen}
           onClose={() => setBookingOpen(false)}
